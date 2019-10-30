@@ -14,4 +14,7 @@ export default css.global`
     font-weight: 400;
     line-height: 1.8;
   }
+  p {
+    margin-bottom: 10px;
+  }
 `;
