@@ -13,7 +13,7 @@ import theme from '../../styles/theme';
 import './app-bar.css';
 
 const AppBar = ({ openDrawer }) => (
-  <TopAppBar fixed>
+  <TopAppBar className='top-app-bar' fixed>
     <TopAppBarRow>
       <TopAppBarSection align='start'>
         <TopAppBarIcon navIcon tabIndex={0}>

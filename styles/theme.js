@@ -7,12 +7,12 @@ const theme = {
   },
   colors: {
     text: '#333',
-    background: '#fff',
-    link: '#1eaaf1',
-    linkHover: '#0d8ecf',
-    border: '#ddd',
-    warning: '#fff3cd',
-    success: '#d4edda'
+    background: '#202124',
+    // link: '#1eaaf1',
+    // linkHover: '#0d8ecf',
+    // border: '#ddd',
+    // warning: '#fff3cd',
+    // success: '#d4edda'
   },
   logo: {
     src: '/images/icons/f-analytics.svg',
