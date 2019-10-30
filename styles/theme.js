@@ -13,6 +13,10 @@ const theme = {
     border: '#ddd',
     warning: '#fff3cd',
     success: '#d4edda'
+  },
+  logo: {
+    src: '/images/icons/f-analytics.svg',
+    alt: 'green analytics graph'
   }
 };
 
