@@ -5,9 +5,7 @@ import TopAppBar, {
   TopAppBarSection,
   TopAppBarTitle
 } from '@material/react-top-app-bar';
-import '@material/react-top-app-bar/dist/top-app-bar.css';
 import MaterialIcon from '@material/react-material-icon';
-import '@material/react-material-icon/dist/material-icon.css';
 
 import theme from '../../styles/theme';
 import './app-bar.css';
