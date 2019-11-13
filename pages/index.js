@@ -54,6 +54,11 @@ const Description = () => (
       a:visited {
         color: #a6a6a6;
       }
+      @media screen and (max-width: 920px) {
+        .highlights {
+          display: none;
+        }
+      }
     `}</style>
   </div>
 );
@@ -92,6 +97,11 @@ const Illustration = () => (
         box-shadow: 0 0 0 1px rgba(255,255,255,.16);
         transition: box-shadow .3s cubic-bezier(.4,0,.2,1);
       }
+      @media screen and (max-width: 520px) {
+        .illustration {
+          flex-direction: column;
+        }
+      }
     `}</style>
   </div>
 );
@@ -114,9 +124,8 @@ const Home = () => (
       .container {
         margin: 0 auto;
         max-width: 1520px;
-        padding: 0 16px;
+        padding: 0;
       }
-      
       @media screen and (min-width: 921px) {
         .container {
           padding: 0 40px;
