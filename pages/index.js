@@ -1,6 +1,7 @@
 
 import Head from 'next/head';
 import Link from 'next/link';
+import Router from 'next/router';
 
 const Description = () => (
   <div className='description'>
@@ -59,11 +60,37 @@ const Description = () => (
 
 const Illustration = () => (
   <div className='illustration'>
-    <div></div>
-    <div></div>
+    <div className='factor-type'>
+      <img onClick={() => Router.push('/')} width='100%' src='/images/factor-type.svg' alt='memory cpu network' />
+    </div>
+    <div className='low-data'>
+      <img onClick={() => Router.push('/')} width='100%' src='/images/low-data.png' alt='phone with low data' />
+    </div>
     <style jsx>{`
       .illustration {
         display: flex;
+      }
+      .illustration > div {
+        padding: 1.25rem;
+      }
+      .illustration > .factor-type {
+        flex: 2;
+        cursor: pointer;
+      }
+      .illustration > .factor-type:hover {
+        box-shadow: 0 0 0 1px rgba(255,255,255,.16);
+        transition: box-shadow .3s cubic-bezier(.4,0,.2,1);
+      }
+      .illustration > .factor-type > img {
+        border: 1px solid rgba(158,158,158,.3);
+      }
+      .illustration > .low-data {
+        flex: 1;
+        cursor: pointer;
+      }
+      .illustration > .low-data:hover {
+        box-shadow: 0 0 0 1px rgba(255,255,255,.16);
+        transition: box-shadow .3s cubic-bezier(.4,0,.2,1);
       }
     `}</style>
   </div>
@@ -74,14 +101,14 @@ const Home = () => (
     <Head>
       <title>Home</title>
     </Head>
-    <section className='main'>
+    <section className='hero'>
       <div className='container'>
         <Description />
         <Illustration />
       </div>
     </section>
     <style jsx>{`
-      .main {
+      .hero {
         padding: 152px 0 48px 0;
       }
       .container {
