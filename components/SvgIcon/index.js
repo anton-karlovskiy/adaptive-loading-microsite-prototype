@@ -1,5 +1,4 @@
 
-// ray test touch <
 import React from 'react';
 
 const SvgIcon = ({ name, width, height, onClick }) => (
@@ -42,4 +41,3 @@ const SvgIcon = ({ name, width, height, onClick }) => (
 );
 
 export default SvgIcon;
-// ray test touch >
