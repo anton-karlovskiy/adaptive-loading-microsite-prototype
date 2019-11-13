@@ -2,11 +2,13 @@
 import { useState } from 'react';
 import Drawer, { DrawerContent, DrawerHeader, DrawerTitle } from '@material/react-drawer';
 import List, {ListItem, ListItemGraphic, ListItemText} from '@material/react-list';
+// ray test touch <
+// TODO: use svg icons
 import MaterialIcon from '@material/react-material-icon';
+// ray test touch >
 
 import AppBar from '../../components/AppBar';
 import globalStyles from '../../styles/global.js';
-import './layout.css';
 
 const Layout = ({ children }) => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
