@@ -6,8 +6,8 @@ import TopAppBar, {
   TopAppBarTitle
 } from '@material/react-top-app-bar';
 
+import NavigationItemList from '../NavigationItemList';
 import SvgIcon from '../../SvgIcon';
-
 import theme from '../../../styles/theme';
 import './app-bar.css';
 
@@ -23,7 +23,10 @@ const AppBar = ({ openDrawer }) => (
         </TopAppBarTitle>
       </TopAppBarSection>
       <TopAppBarSection align='end' role='toolbar'>
-        
+        <NavigationItemList />
+        <TopAppBarIcon actionItem tabIndex={0}>
+          <SvgIcon name='search' onClick={() => console.log('[AppBar] search click')} />
+        </TopAppBarIcon>
       </TopAppBarSection>
     </TopAppBarRow>
   </TopAppBar>

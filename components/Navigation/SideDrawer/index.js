@@ -2,10 +2,8 @@
 import { useState } from 'react';
 import Drawer, { DrawerContent, DrawerHeader, DrawerTitle } from '@material/react-drawer';
 import List, {ListItem, ListItemGraphic, ListItemText} from '@material/react-list';
-// ray test touch <
-// TODO: use svg icons
-import MaterialIcon from '@material/react-material-icon';
-// ray test touch >
+
+import SvgIcon from '../../SvgIcon';
 
 const SideDrawer = ({ title, open, closeDrawer }) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -23,7 +21,7 @@ const SideDrawer = ({ title, open, closeDrawer }) => {
       <DrawerContent>
         <List singleSelection selectedIndex={selectedIndex}>
           <ListItem>
-            <ListItemGraphic graphic={<MaterialIcon icon='folder'/>} />
+            <ListItemGraphic graphic={<SvgIcon name='folder'/>} />
             <ListItemText primaryText='Mail' />
           </ListItem>
         </List>
