@@ -19,6 +19,6 @@ export default css.global`
   }
   a {
     text-decoration: none;
-    color: #fff;
+    color: unset;
   }
 `;

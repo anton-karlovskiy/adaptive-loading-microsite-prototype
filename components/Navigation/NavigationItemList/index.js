@@ -36,7 +36,20 @@ const NavigationItemList = () => (
     <style jsx>{`
       ul {
         list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
         font-size: 16px;
+      }
+      ul:hover {
+        color: #9e9e9e;
+      }
+      @media screen and (max-width: 920px) {
+        ul {
+          padding: 0;
+          width: 100%;
+          justify-content: space-evenly
+        }
       }
     `}</style>
   </ul>

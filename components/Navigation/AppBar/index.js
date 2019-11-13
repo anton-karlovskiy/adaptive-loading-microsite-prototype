@@ -13,8 +13,8 @@ import './app-bar.css';
 
 const AppBar = ({ openDrawer }) => (
   <TopAppBar className='top-app-bar' fixed>
-    <TopAppBarRow>
-      <TopAppBarSection align='start'>
+    <TopAppBarRow className='top-app-bar-row'>
+      <TopAppBarSection className='top-app-bar-section' align='start'>
         <TopAppBarIcon navIcon tabIndex={0}>
           <SvgIcon name='menu' onClick={openDrawer} />
         </TopAppBarIcon>
@@ -22,7 +22,7 @@ const AppBar = ({ openDrawer }) => (
           <img src={theme.logo.src} width='20px' alt={theme.logo.alt} />
         </TopAppBarTitle>
       </TopAppBarSection>
-      <TopAppBarSection align='end' role='toolbar'>
+      <TopAppBarSection className='top-app-bar-section' align='end' role='toolbar'>
         <NavigationItemList />
         <TopAppBarIcon actionItem tabIndex={0}>
           <SvgIcon name='search' onClick={() => console.log('[AppBar] search click')} />

@@ -7,12 +7,15 @@ const NavitationListItem = ({ title, path }) => (
       <a>{title}</a>
     </Link>
     <style jsx>{`
-      li {
-        display: inline-block;
-        *display:inline; /* this fix is needed for IE7- */
+      li:hover {
+        color: #fff;
       }
-      a {
-        padding: 0 16px;
+      @media only screen and (min-width: 921px) {
+        a {
+          line-height: 72px;
+          padding: 0 16px;
+          display: inline-block;
+        }
       }
     `}</style>
   </li>
