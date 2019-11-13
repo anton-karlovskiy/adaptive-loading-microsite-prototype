@@ -6,7 +6,7 @@ const theme = {
     mono: 'Menlo, Monaco, monospace'
   },
   colors: {
-    text: '#333',
+    text: '#fff',
     background: '#202124',
     // link: '#1eaaf1',
     // linkHover: '#0d8ecf',
