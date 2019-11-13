@@ -17,7 +17,14 @@ const theme = {
   logo: {
     src: '/images/icons/f-analytics.svg',
     alt: 'green analytics graph'
-  }
+  },
+  hoveringTransition: `
+    transition: color .1s cubic-bezier(.4,0,.2,1);
+    transition-property: color;
+    transition-duration: 0.1s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0s;
+  `
 };
 
 export default theme;

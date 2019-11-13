@@ -1,6 +1,8 @@
 
 import NavitationListItem from './NavitationListItem';
 
+import theme from '../../../styles/theme';
+
 const navigationItems = [
   {
     id: 1,
@@ -43,6 +45,7 @@ const NavigationItemList = () => (
       }
       ul:hover {
         color: #9e9e9e;
+        ${theme.hoveringTransition}
       }
       @media screen and (max-width: 920px) {
         ul {
