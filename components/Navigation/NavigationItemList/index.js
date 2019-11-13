@@ -49,9 +49,13 @@ const NavigationItemList = () => (
       }
       @media screen and (max-width: 920px) {
         ul {
-          padding: 0;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 64px;
+
           width: 100%;
-          justify-content: space-evenly
+          justify-content: space-evenly;
         }
       }
     `}</style>

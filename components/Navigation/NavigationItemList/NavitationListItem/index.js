@@ -22,6 +22,8 @@ const NavitationListItem = ({ title, path }) => {
         }
         a {
           position: relative;
+          display: inline-block;
+          line-height: 48px;
           ${theme.hoveringTransition}
         }
         a > span {
@@ -39,7 +41,6 @@ const NavitationListItem = ({ title, path }) => {
           a {
             line-height: 72px;
             margin: 0 16px;
-            display: inline-block;
           }
         }
       `}</style>
