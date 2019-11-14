@@ -99,13 +99,13 @@ const demos = [
   {
     id: 17,
     title: 'React Twitter - save-data loading based on Client Hint',
-    thumbnail: 'react-twitter-save-data-loading(client-hint).PNG',
+    thumbnail: 'react-twitter-save-data-loading-client-hint.PNG',
     link: 'https://adaptive-loading.web.app/react-twitter-save-data-loading(client-hint)/'
   },
   {
     id: 18,
     title: 'React Twitter - save-data loading based on Hook',
-    thumbnail: 'react-twitter-save-data-loading(hook).PNG',
+    thumbnail: 'react-twitter-save-data-loading-hook.PNG',
     link: 'https://adaptive-loading.web.app/react-twitter-save-data-loading(hook)/'
   },
   {
