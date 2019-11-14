@@ -1,11 +1,11 @@
 
-// ray test touch <
 import Head from 'next/head';
 
 import ThumbnailGrid from '../components/ThumbnailGrid';
 import Thumbnail from '../components/Thumbnail';
 import HeroSection from '../hoc/HeroSection';
 import { demos } from '../data';
+import { navigateToOtherSite } from '../utils/helpers';
 
 const ThumbnailGallery = ({ children }) => (
   <div className='thumbnail-gallery'>
@@ -29,10 +29,13 @@ const Demos = () => (
       <ThumbnailGallery>
         <ThumbnailGrid>
           { demos.map(demo => {
-              const { id, thumbnail, path } = demo;
+              const { id, title, thumbnail, link } = demo;
               const source = `/images/demos/${thumbnail}`;
+              const onClickHandler = () => {
+                navigateToOtherSite(link);
+              };
               return (
-                <Thumbnail key={id} src={source} alt='' onClick={null} />
+                <Thumbnail clickable key={id} title={title} src={source} alt={title} onClick={onClickHandler} />
               );
           }) }
         </ThumbnailGrid>
@@ -42,4 +45,3 @@ const Demos = () => (
 );
 
 export default Demos;
-// ray test touch >

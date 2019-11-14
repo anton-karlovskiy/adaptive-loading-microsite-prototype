@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Router from 'next/router';
 
 import HeroSection from '../hoc/HeroSection';
+import theme from '../styles/theme';
 
 const Description = () => (
   <div className='description'>
@@ -85,8 +86,7 @@ const Illustration = () => (
         cursor: pointer;
       }
       .illustration > .factor-type:hover {
-        box-shadow: 0 0 0 1px rgba(255,255,255,.16);
-        transition: box-shadow .3s cubic-bezier(.4,0,.2,1);
+        ${theme.imageHoveringEffect}
       }
       .illustration > .factor-type > img {
         border: 1px solid rgba(158,158,158,.3);
@@ -96,8 +96,7 @@ const Illustration = () => (
         cursor: pointer;
       }
       .illustration > .low-data:hover {
-        box-shadow: 0 0 0 1px rgba(255,255,255,.16);
-        transition: box-shadow .3s cubic-bezier(.4,0,.2,1);
+        ${theme.imageHoveringEffect}
       }
       @media screen and (max-width: 520px) {
         .illustration {

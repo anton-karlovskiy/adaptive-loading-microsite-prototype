@@ -1,9 +1,11 @@
 
-// ray test touch <
-const Thumbnail = ({ src, alt, onClick, clickable }) => {
+const Thumbnail = ({ title, src, alt, onClick, clickable }) => {
   return (
     <div className='thumbnail'>
       <img className={clickable && 'clickable'} src={src} alt={alt} onClick={onClick} />
+      <div className='thumbnail-title'>
+        <p>{title}</p>
+      </div>
       <style jsx>{`
         .thumbnail {
           height: 100%;
@@ -14,6 +16,9 @@ const Thumbnail = ({ src, alt, onClick, clickable }) => {
           object-fit: cover;
           transition: all 0.3s;
           box-sizing: border-box;
+        }
+        .thumbnail-title {
+          text-align: center;
         }
         .clickable {
           cursor: pointer;
@@ -27,4 +32,3 @@ const Thumbnail = ({ src, alt, onClick, clickable }) => {
 };
 
 export default Thumbnail;
-// ray test touch >

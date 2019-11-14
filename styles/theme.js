@@ -1,5 +1,4 @@
 
-// TODO: dummy for now
 const theme = {
   fontFamily: {
     sansSerif: '-apple-system, "Helvetica Neue", Arial, sans-serif',
@@ -7,19 +6,18 @@ const theme = {
   },
   colors: {
     text: '#fff',
-    background: '#202124',
-    // link: '#1eaaf1',
-    // linkHover: '#0d8ecf',
-    // border: '#ddd',
-    // warning: '#fff3cd',
-    // success: '#d4edda'
+    background: '#202124'
   },
   logo: {
     src: '/images/icons/f-analytics.svg',
     alt: 'green analytics graph'
   },
-  hoveringTransition: `
+  linkHoveringEffect: `
     transition: color .1s cubic-bezier(.4,0,.2,1);
+  `,
+  imageHoveringEffect: `
+    box-shadow: 0 0 0 1px rgba(255,255,255,.16);
+    transition: box-shadow .3s cubic-bezier(.4,0,.2,1);
   `
 };
 

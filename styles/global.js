@@ -53,12 +53,15 @@ export default css.global`
       font-size: 50px;
     }
     p {
-      font-size: 16px;
+      font-size: 15px;
     }
   }
   @media screen and (min-width: 921px) {
     h1 {
       font-size: 60px;
+    }
+    p {
+      font-size: 16px;
     }
   }
 `;

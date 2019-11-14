@@ -42,7 +42,7 @@ const NavigationItemList = () => (
       }
       ul:hover {
         color: #9e9e9e;
-        ${theme.hoveringTransition}
+        ${theme.linkHoveringEffect}
       }
       @media screen and (max-width: 920px) {
         ul {

@@ -18,13 +18,13 @@ const NavitationListItem = ({ title, path }) => {
       <style jsx>{`
         li:hover {
           color: #fff;
-          ${theme.hoveringTransition}
+          ${theme.linkHoveringEffect}
         }
         a {
           position: relative;
           display: inline-block;
           line-height: 48px;
-          ${theme.hoveringTransition}
+          ${theme.linkHoveringEffect}
         }
         a > span {
           position: absolute;
