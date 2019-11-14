@@ -1,14 +1,17 @@
 
-const ImageThumb = ({ src, alt, onClick, clickable }) => {
+// ray test touch <
+const Thumbnail = ({ src, alt, onClick, clickable }) => {
   return (
-    <div className='image-thumb'>
+    <div className='thumbnail'>
       <img className={clickable && 'clickable'} src={src} alt={alt} onClick={onClick} />
       <style jsx>{`
-        .image-thumb img {
-          width: 500px;
-          height: auto;
-          max-width: 100%;
-          max-height: 100%;
+        .thumbnail {
+          height: 100%;
+        }
+        .thumbnail img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
           transition: all 0.3s;
           box-sizing: border-box;
         }
@@ -23,4 +26,5 @@ const ImageThumb = ({ src, alt, onClick, clickable }) => {
   );
 };
 
-export default ImageThumb;
+export default Thumbnail;
+// ray test touch >

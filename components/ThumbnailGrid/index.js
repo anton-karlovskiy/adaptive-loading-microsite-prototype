@@ -1,5 +1,5 @@
 
-const FourColGrid = ({ children }) => {
+const ThumbnailGrid = ({ children }) => {
   const renderElements = () => {
     const gridElements = children.map((element, i) => {
       return (
@@ -7,27 +7,22 @@ const FourColGrid = ({ children }) => {
           {element}
           <style jsx>{`
             .grid-element {
-              margin: 0 40px 40px 0;
               background: #353535;
-              max-height: 430px;
+              height: 152px;
               animation: animateGrid 0.5s;
               overflow: hidden;
             }
             @keyframes animateGrid {
               from {
-                  opacity:0;
+                opacity:0;
               }
               to {
-                  opacity:1;
+                opacity:1;
               }
             }
-            // For a 4-column grid
-            .grid-element:nth-child(4n+4) {
-              margin-right: 0;
-            }
-            @media screen and (max-width: 720px) {
-              .grid-element:nth-child(2n+2) {
-                margin-right: 0;
+            @media screen and (min-width: 521px) {
+              .grid-element {
+                height: 172px;
               }
             }
           `}</style>
@@ -43,11 +38,21 @@ const FourColGrid = ({ children }) => {
       <style jsx>{`
         .grid-content {
           display: grid;
-          grid-template-columns: auto auto auto auto;
+          grid-column-gap: 10px;
+          grid-row-gap: 10px;
+          grid-template-columns: auto auto;
         }
-        @media screen and (max-width: 720px) {
+        @media screen and (min-width: 521px) {
           .grid-content {
-            grid-template-columns: auto auto;
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+          }
+        }
+        @media screen and (min-width: 921px) {
+          .grid-content {
+            grid-column-gap: 40px;
+            grid-row-gap: 40px;
+            grid-template-columns: auto auto auto auto;  
           }
         }
       `}</style>
@@ -55,4 +60,4 @@ const FourColGrid = ({ children }) => {
   );
 };
 
-export default FourColGrid;
+export default ThumbnailGrid;
