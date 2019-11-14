@@ -5,7 +5,6 @@ import ThumbnailGrid from '../components/ThumbnailGrid';
 import Thumbnail from '../components/Thumbnail';
 import HeroSection from '../hoc/HeroSection';
 import { demos } from '../data';
-import { navigateToOtherSite } from '../utils/helpers';
 
 const ThumbnailGallery = ({ children }) => (
   <div className='thumbnail-gallery'>
@@ -30,12 +29,10 @@ const Demos = () => (
         <ThumbnailGrid>
           { demos.map(demo => {
               const { id, title, thumbnail, link } = demo;
-              const source = `/images/demos/${thumbnail}`;
-              const onClickHandler = () => {
-                navigateToOtherSite(link);
-              };
               return (
-                <Thumbnail clickable key={id} title={title} src={source} alt={title} onClick={onClickHandler} />
+                <a key={id} href={link} target='_blank' rel='noopener noreferrer'>
+                  <Thumbnail title={title} src={thumbnail} alt={title} />
+                </a>
               );
           }) }
         </ThumbnailGrid>
