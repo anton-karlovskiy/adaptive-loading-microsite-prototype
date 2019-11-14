@@ -15,7 +15,6 @@ export default css.global`
     padding: 0;
     font-size: calc(10px + 1vmin);
     font-weight: 400;
-    line-height: 1.8;
   }
   p {
     font-size: 14px;

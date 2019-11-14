@@ -1,11 +1,11 @@
 
 import Head from 'next/head';
 import Link from 'next/link';
-import Router from 'next/router';
 
 import HeroSection from '../hoc/HeroSection';
 import { highlights } from '../utils/links';
 import theme from '../styles/theme';
+import { banners } from '../styles/images';
 
 const Description = () => (
   <div className='description'>
@@ -76,10 +76,14 @@ const Description = () => (
 const Illustration = () => (
   <div className='illustration'>
     <div className='factor-type'>
-      <img onClick={() => Router.push('/')} width='100%' src='/images/factor-type.svg' alt='memory cpu network' />
+      <Link href='/' as ='/'>
+        <img width='100%' src={banners.factorType.src} alt={banners.factorType.alt} />
+      </Link>
     </div>
     <div className='low-data'>
-      <img onClick={() => Router.push('/')} width='100%' src='/images/low-data.png' alt='phone with low data' />
+      <Link href='/' as ='/'>
+        <img width='100%' src={banners.lowData.src} alt={banners.lowData.alt} />
+      </Link>
     </div>
     <style jsx>{`
       .illustration {
