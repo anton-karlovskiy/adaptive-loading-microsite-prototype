@@ -4,14 +4,14 @@ import { useRouter } from 'next/router';
 
 import theme from '../../../../styles/theme';
 
-const NavitationListItem = ({ title, path }) => {
+const NavitationListItem = ({ caption, href, as }) => {
   const { asPath } = useRouter();
 
   return (
     <li>
-      <Link href={path}>
+      <Link href={href} as={as}>
         <a>
-          {title}
+          {caption}
           <span />
         </a>
       </Link>
@@ -33,7 +33,7 @@ const NavitationListItem = ({ title, path }) => {
           bottom: 0;
           height: 4px;
           background: #fff;
-          transform: scaleY(${asPath === path ? 1 : 0});
+          transform: scaleY(${asPath === href ? 1 : 0});
           transform-origin: bottom;
           transition: transform 235ms cubic-bezier(.4,0,.2,1);
         }

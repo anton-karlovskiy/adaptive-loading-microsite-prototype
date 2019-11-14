@@ -8,10 +8,6 @@ const theme = {
     text: '#fff',
     background: '#202124'
   },
-  logo: {
-    src: '/images/icons/f-analytics.svg',
-    alt: 'green analytics graph'
-  },
   linkHoveringEffect: `
     transition: color .1s cubic-bezier(.4,0,.2,1);
   `,

@@ -1,4 +1,5 @@
 
+import Link from 'next/link';
 import TopAppBar, {
   TopAppBarIcon,
   TopAppBarRow,
@@ -8,7 +9,7 @@ import TopAppBar, {
 
 import NavigationItemList from '../NavigationItemList';
 import SvgIcon from '../../SvgIcon';
-import theme from '../../../styles/theme';
+import { pages } from '../../../utils/links';
 import './app-bar.css';
 
 const AppBar = ({ openDrawer }) => (
@@ -16,10 +17,12 @@ const AppBar = ({ openDrawer }) => (
     <TopAppBarRow className='top-app-bar-row'>
       <TopAppBarSection className='top-app-bar-section' align='start'>
         <TopAppBarIcon navIcon tabIndex={0}>
-          <SvgIcon name='menu' onClick={openDrawer} />
+          <SvgIcon name='menu' withHoverEffect onClick={openDrawer} />
         </TopAppBarIcon>
         <TopAppBarTitle className='top-app-bar-title'>
-          <img src={theme.logo.src} width='20px' alt={theme.logo.alt} />
+          <Link href={pages.home.href} as={pages.home.as}>
+            <a><SvgIcon name='main' /></a>
+          </Link>
         </TopAppBarTitle>
       </TopAppBarSection>
       <TopAppBarSection className='top-app-bar-section' align='end' role='toolbar'>

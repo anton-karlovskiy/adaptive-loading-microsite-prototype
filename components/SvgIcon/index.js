@@ -1,11 +1,9 @@
 
-import React from 'react';
-
-const SvgIcon = ({ name, width, height, onClick }) => (
-  <button className='svg-icon-container' onClick={onClick}>
+const SvgIcon = ({ name, width, height, onClick, withHoverEffect }) => (
+  <button className={withHoverEffect ? 'svg-icon-container' : 'svg-icon-container__no-hover-effect'} onClick={onClick}>
     <div className='svg-icon'></div>
     <style jsx>{`
-      .svg-icon-container {
+      .svg-icon-container, .svg-icon-container__no-hover-effect  {
         position: relative;
         cursor: pointer;
         padding: 12px;

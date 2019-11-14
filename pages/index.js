@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Router from 'next/router';
 
 import HeroSection from '../hoc/HeroSection';
+import { highlights } from '../utils/links';
 import theme from '../styles/theme';
 
 const Description = () => (
@@ -16,18 +17,24 @@ const Description = () => (
       <h4 className='uppercase'>HIGHLIGHTS</h4>
       <ul>
         <li>
-          <Link href='/get-started'>
-            <a>Get Started</a>
+          <Link
+            href={highlights.getStarted.href}
+            as={highlights.getStarted.as}>
+            <a>{highlights.getStarted.caption}</a>
           </Link>
         </li>
         <li>
-          <Link href='/chrome-dev-summit-talk'>
-            <a>Chrome Dev Summit talk</a>
+          <Link
+            href={highlights.chromeDevSummitTalk.href}
+            href={highlights.chromeDevSummitTalk.as}>
+            <a>{highlights.chromeDevSummitTalk.caption}</a>
           </Link>
         </li>
         <li>
-          <Link href='/device-year-class'>
-            <a>Device Year Class</a>
+          <Link
+            href={highlights.deviceYearClass.href}
+            as={highlights.deviceYearClass.as}>
+            <a>{highlights.deviceYearClass.caption}</a>
           </Link>
         </li>
       </ul>
