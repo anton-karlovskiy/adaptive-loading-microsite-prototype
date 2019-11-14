@@ -3,6 +3,8 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Router from 'next/router';
 
+import HeroSection from '../hoc/HeroSection';
+
 const Description = () => (
   <div className='description'>
     <div className='summary'>
@@ -107,20 +109,17 @@ const Illustration = () => (
 );
 
 const Home = () => (
-  <div>
+  <>
     <Head>
       <title>Home</title>
     </Head>
-    <section className='hero'>
+    <HeroSection>
       <div className='container'>
         <Description />
         <Illustration />
       </div>
-    </section>
+    </HeroSection>
     <style jsx>{`
-      .hero {
-        padding: 152px 0 48px 0;
-      }
       .container {
         margin: 0 auto;
         max-width: 1520px;
@@ -132,7 +131,7 @@ const Home = () => (
         }
       }
     `}</style>
-  </div>
+  </>
 );
 
 export default Home;
