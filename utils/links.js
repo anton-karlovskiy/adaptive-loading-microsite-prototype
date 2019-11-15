@@ -1,22 +1,22 @@
 
 const pages = {
   home: {
-    caption: 'Home',
+    title: 'Home',
     href: '/',
     as: '/'
   },
   reactHooks: {
-    caption: 'React Hooks',
+    title: 'React Hooks',
     href: '/react-hooks',
     as: '/react-hooks'
   },
   demos: {
-    caption: 'Demos',
+    title: 'Demos',
     href: '/demos',
     as: '/demos'
   },
   resources: {
-    caption: 'Resources',
+    title: 'Resources',
     href: '/resources',
     as: '/resources'
   }
@@ -24,17 +24,17 @@ const pages = {
 
 const highlights = {
   getStarted: {
-    caption: 'Get Started',
+    title: 'Get Started',
     href: '/get-started',
     as: '/get-started'
   },
   chromeDevSummitTalk: {
-    caption: 'Chrome Dev Summit talk',
+    title: 'Chrome Dev Summit talk',
     href: '/chrome-dev-summit-talk',
     as: '/chrome-dev-summit-talk'
   },
   deviceYearClass: {
-    caption: 'Device Year Class',
+    title: 'Device Year Class',
     href: '/device-year-class',
     as: '/device-year-class'
   }

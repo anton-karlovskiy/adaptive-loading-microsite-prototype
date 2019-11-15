@@ -4,14 +4,14 @@ import { useRouter } from 'next/router';
 
 import theme from '../../../../styles/theme';
 
-const NavitationListItem = ({ caption, href, as }) => {
+const NavitationListItem = ({ title, href, as }) => {
   const { asPath } = useRouter();
 
   return (
     <li>
       <Link href={href} as={as}>
         <a>
-          {caption}
+          {title}
           <span />
         </a>
       </Link>

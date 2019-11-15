@@ -9,7 +9,7 @@ const NavigationItemList = () => (
     { Object.entries(pages).map(([key, value]) => (
       <NavitationListItem
         key={key}
-        caption={value.caption}
+        title={value.title}
         href={value.href}
         as={value.as} />
     )) }

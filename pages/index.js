@@ -1,8 +1,9 @@
 
-import Head from 'next/head';
 import Link from 'next/link';
 
+import Head from '../components/Head';
 import HeroSection from '../hoc/HeroSection';
+import { pages } from '../utils/links';
 import { highlights } from '../utils/links';
 import theme from '../styles/theme';
 import { banners } from '../styles/images';
@@ -20,21 +21,21 @@ const Description = () => (
           <Link
             href={highlights.getStarted.href}
             as={highlights.getStarted.as}>
-            <a>{highlights.getStarted.caption}</a>
+            <a>{highlights.getStarted.title}</a>
           </Link>
         </li>
         <li>
           <Link
             href={highlights.chromeDevSummitTalk.href}
             href={highlights.chromeDevSummitTalk.as}>
-            <a>{highlights.chromeDevSummitTalk.caption}</a>
+            <a>{highlights.chromeDevSummitTalk.title}</a>
           </Link>
         </li>
         <li>
           <Link
             href={highlights.deviceYearClass.href}
             as={highlights.deviceYearClass.as}>
-            <a>{highlights.deviceYearClass.caption}</a>
+            <a>{highlights.deviceYearClass.title}</a>
           </Link>
         </li>
       </ul>
@@ -120,9 +121,7 @@ const Illustration = () => (
 
 const Home = () => (
   <>
-    <Head>
-      <title>Home</title>
-    </Head>
+    <Head title={pages.home.title} />
     <HeroSection>
       <div className='container'>
         <Description />

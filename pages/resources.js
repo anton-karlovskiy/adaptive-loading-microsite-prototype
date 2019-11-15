@@ -1,6 +1,12 @@
 
+import Head from '../components/Head';
+import { pages } from '../utils/links';
+
 const Resources = () => (
-  <div>Resources</div>
+  <>
+    <Head title={pages.resources.title} />
+    <div>Resources</div>
+  </>
 );
 
 export default Resources;

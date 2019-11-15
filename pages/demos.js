@@ -1,9 +1,10 @@
 
-import Head from 'next/head';
 
 import ThumbnailGrid from '../components/ThumbnailGrid';
 import Thumbnail from '../components/Thumbnail';
 import HeroSection from '../hoc/HeroSection';
+import Head from '../components/Head';
+import { pages } from '../utils/links';
 import { demos } from '../data';
 
 const ThumbnailGallery = ({ children }) => (
@@ -21,9 +22,7 @@ const ThumbnailGallery = ({ children }) => (
 
 const Demos = () => (
   <>
-    <Head>
-      <title>Demos</title>
-    </Head>
+    <Head title={pages.demos.title} />
     <HeroSection>
       <ThumbnailGallery>
         <ThumbnailGrid>
