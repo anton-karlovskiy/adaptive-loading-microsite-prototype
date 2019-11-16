@@ -2,8 +2,9 @@
 import { useEffect } from 'react';
 
 import { imagePlaceHolder } from '../../styles/images';
+import { getDemosPath } from '../../data';
 
-const Thumbnail = ({ title, src, alt, onClick, clickable, lazyload }) => {
+const Thumbnail = ({ title, thumbnail, alt, onClick, clickable, lazyload }) => {
   useEffect(() => {
     if (lazyload) {
       (async () => {
@@ -24,7 +25,6 @@ const Thumbnail = ({ title, src, alt, onClick, clickable, lazyload }) => {
     }
   }, []);
 
-
   let classes = '';
   if (clickable) {
     classes += 'clickable';
@@ -35,13 +35,16 @@ const Thumbnail = ({ title, src, alt, onClick, clickable, lazyload }) => {
 
   return (
     <div className='thumbnail'>
-      <img
-        className={classes}
-        data-src={imagePlaceHolder}
-        srcSet={src}
-        alt={alt}
-        onClick={onClick}
-        loading={lazyload ? 'lazy' : 'auto'} />
+      <picture>
+        <source srcset={getDemosPath('webp') + thumbnail + '.webp'} type='image/webp' />
+        <source srcset={getDemosPath('jpg') + thumbnail + '.jpg'} type='image/jpeg' />
+        <img
+          className={classes}
+          src={imagePlaceHolder}
+          onClick={onClick}
+          alt={alt}
+          loading={lazyload ? 'lazy' : 'auto'} />
+      </picture>
       <div className='thumbnail-title'>
         <p>{title}</p>
       </div>

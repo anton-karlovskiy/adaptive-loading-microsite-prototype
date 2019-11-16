@@ -30,7 +30,7 @@ const Demos = () => (
               const { id, title, thumbnail, link } = demo;
               return (
                 <a key={id} href={link} target='_blank' rel='noopener noreferrer'>
-                  <Thumbnail title={title} src={thumbnail} alt={title} lazyload />
+                  <Thumbnail title={title} thumbnail={thumbnail} alt={title} lazyload />
                 </a>
               );
           }) }
