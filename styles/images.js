@@ -16,7 +16,10 @@ const head = {
   appleTouchIcon: '/head/apple-touch-icon.png'
 };
 
+const imagePlaceHolder = '/images/placeholder.gif';
+
 export {
   banners,
-  head
+  head,
+  imagePlaceHolder
 };
