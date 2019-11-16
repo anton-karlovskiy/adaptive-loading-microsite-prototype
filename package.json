@@ -12,6 +12,7 @@
     "@material/react-list": "^0.15.0",
     "@material/react-top-app-bar": "^0.15.0",
     "@zeit/next-css": "^1.0.1",
+    "lazysizes": "^5.2.0-beta1",
     "next": "9.1.1",
     "react": "16.11.0",
     "react-dom": "16.11.0"
