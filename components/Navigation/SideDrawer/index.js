@@ -1,7 +1,10 @@
 
 import { useState } from 'react';
+// TODO: double check if we really need material components
 import Drawer, { DrawerContent, DrawerHeader, DrawerTitle } from '@material/react-drawer';
 import List, {ListItem, ListItemGraphic, ListItemText} from '@material/react-list';
+import '@material/react-drawer/dist/drawer.css';
+import '@material/react-list/dist/list.css';
 
 import SvgIcon from '../../SvgIcon';
 

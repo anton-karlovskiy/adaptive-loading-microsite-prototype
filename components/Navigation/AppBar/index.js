@@ -1,11 +1,13 @@
 
 import Link from 'next/link';
+// TODO: double check if we really need material components
 import TopAppBar, {
   TopAppBarIcon,
   TopAppBarRow,
   TopAppBarSection,
   TopAppBarTitle
 } from '@material/react-top-app-bar';
+import '@material/react-top-app-bar/dist/top-app-bar.css';
 
 import NavigationItemList from '../NavigationItemList';
 import SvgIcon from '../../SvgIcon';
