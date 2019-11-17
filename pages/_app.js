@@ -1,6 +1,5 @@
 
 import App from 'next/app';
-import Head from 'next/head';
 import '@material/react-drawer/dist/drawer.css';
 import '@material/react-list/dist/list.css';
 import '@material/react-top-app-bar/dist/top-app-bar.css';
@@ -13,9 +12,6 @@ class MyApp extends App {
 
     return (
       <>
-        <Head>
-          <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet' />
-        </Head>
         <Layout>
           <Component {...pageProps} />
         </Layout>

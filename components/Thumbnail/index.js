@@ -5,6 +5,7 @@ import { imagePlaceHolder } from '../../styles/images';
 import { getDemosPath } from '../../data';
 
 const Thumbnail = ({ title, fileName, alt, onClick, clickable, lazyload }) => {
+
   useEffect(() => {
     if (lazyload) {
       (async () => {
@@ -17,7 +18,7 @@ const Thumbnail = ({ title, fileName, alt, onClick, clickable, lazyload }) => {
         } else {
           console.log('[components Thumbnail] loading attribute is not supported');
           // Dynamically import the LazySizes library
-          const lazySizesLib = await import('lazysizes');
+          await import('lazysizes');
           // Initiate LazySizes (reads data-src & class=lazyload)
           lazySizes.init(); // lazySizes works off a global.
         }
@@ -27,10 +28,10 @@ const Thumbnail = ({ title, fileName, alt, onClick, clickable, lazyload }) => {
 
   let classes = '';
   if (clickable) {
-    classes += 'clickable';
+    classes += ' clickable';
   }
   if (lazyload) {
-    classes += 'lazyload';
+    classes += ' lazyload';
   }
 
   return (
@@ -40,7 +41,7 @@ const Thumbnail = ({ title, fileName, alt, onClick, clickable, lazyload }) => {
         <source srcSet={getDemosPath('jpg') + fileName + '.jpg'} type='image/jpeg' />
         <img
           className={classes}
-          src={imagePlaceHolder}
+          data-src={imagePlaceHolder}
           onClick={onClick}
           alt={alt}
           loading={lazyload ? 'lazy' : 'auto'} />
