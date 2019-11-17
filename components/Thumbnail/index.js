@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import { imagePlaceHolder } from '../../styles/images';
 import { getDemosPath } from '../../data';
 
-const Thumbnail = ({ title, thumbnail, alt, onClick, clickable, lazyload }) => {
+const Thumbnail = ({ title, fileName, alt, onClick, clickable, lazyload }) => {
   useEffect(() => {
     if (lazyload) {
       (async () => {
@@ -36,8 +36,8 @@ const Thumbnail = ({ title, thumbnail, alt, onClick, clickable, lazyload }) => {
   return (
     <div className='thumbnail'>
       <picture>
-        <source srcset={getDemosPath('webp') + thumbnail + '.webp'} type='image/webp' />
-        <source srcset={getDemosPath('jpg') + thumbnail + '.jpg'} type='image/jpeg' />
+        <source srcSet={getDemosPath('webp') + fileName + '.webp'} type='image/webp' />
+        <source srcSet={getDemosPath('jpg') + fileName + '.jpg'} type='image/jpeg' />
         <img
           className={classes}
           src={imagePlaceHolder}

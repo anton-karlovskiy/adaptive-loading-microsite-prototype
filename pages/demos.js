@@ -27,10 +27,10 @@ const Demos = () => (
       <ThumbnailGallery>
         <ThumbnailGrid>
           { demos.map(demo => {
-              const { id, title, thumbnail, link } = demo;
+              const { id, title, fileName, link } = demo;
               return (
                 <a key={id} href={link} target='_blank' rel='noopener noreferrer'>
-                  <Thumbnail title={title} thumbnail={thumbnail} alt={title} lazyload />
+                  <Thumbnail title={title} fileName={fileName} alt={title} lazyload />
                 </a>
               );
           }) }

@@ -5,145 +5,145 @@ const demos = [
   {
     id: 1,
     title: 'Network-aware loading',
-    thumbnail: `cra-network-aware-loading`,
+    fileName: `cra-network-aware-loading`,
     link: `${HOST_URL}cra-network-aware-loading/`
   },
   {
     id: 2,
     title: 'Network-aware only-if-cached loading',
-    thumbnail: `cra-network-aware-only-if-cached-loading`,
+    fileName: `cra-network-aware-only-if-cached-loading`,
     link: `${HOST_URL}cra-network-aware-only-if-cached-loading/`
   },
   {
     id: 3,
     title: 'Network-aware code-splitting',
-    thumbnail: `cra-network-aware-code-splitting`,
+    fileName: `cra-network-aware-code-splitting`,
     link: `${HOST_URL}cra-network-aware-code-splitting/`
   },
   {
     id: 4,
     title: 'Network-aware data-fetching',
-    thumbnail: `cra-network-aware-data-fetching`,
+    fileName: `cra-network-aware-data-fetching`,
     link: `${HOST_URL}cra-network-aware-data-fetching/`
   },
   {
     id: 5,
     title: 'Battery considerate loading',
-    thumbnail: `cra-battery-considerate-loading`,
+    fileName: `cra-battery-considerate-loading`,
     link: `${HOST_URL}cra-battery-considerate-loading/`
   },
   {
     id: 6,
     title: 'Memory considerate loading',
-    thumbnail: `cra-memory-considerate-loading`,
+    fileName: `cra-memory-considerate-loading`,
     link: `${HOST_URL}cra-memory-considerate-loading/`
   },
   {
     id: 7,
     title: 'Memory considerate loading (SketchFab version)',
-    thumbnail: `cra-memory-considerate-loading-sketchfab`,
+    fileName: `cra-memory-considerate-loading-sketchfab`,
     link: `${HOST_URL}cra-memory-considerate-loading-sketchfab/`
   },
   {
     id: 8,
     title: 'Memory considerate animation-toggling',
-    thumbnail: `cna-memory-animation`,
+    fileName: `cna-memory-animation`,
     link: 'https://cna-memory-animation.firebaseapp.com/'
   },
   {
     id: 9,
     title: 'Device-class aware code-splitting',
-    thumbnail: `cra-device-class-aware-code-splitting`,
+    fileName: `cra-device-class-aware-code-splitting`,
     link: `${HOST_URL}cra-device-class-aware-code-splitting/`
   },
   {
     id: 10,
     title: 'Hardware concurrency considerate code-splitting',
-    thumbnail: `cra-hardware-concurrency-considerate-code-splitting`,
+    fileName: `cra-hardware-concurrency-considerate-code-splitting`,
     link: `${HOST_URL}cra-hardware-concurrency-considerate-code-splitting/`
   },
   {
     id: 11,
     title: 'Hardware concurrency considerate loading',
-    thumbnail: `cra-hardware-concurrency-considerate-loading`,
+    fileName: `cra-hardware-concurrency-considerate-loading`,
     link: `${HOST_URL}cra-hardware-concurrency-considerate-loading/`
   },
   {
     id: 12,
     title: 'UA-aware code-splitting',
-    thumbnail: `cra-ua-aware-code-splitting`,
+    fileName: `cra-ua-aware-code-splitting`,
     link: `${HOST_URL}cra-ua-aware-code-splitting/`
   },
   {
     id: 13,
     title: 'DPR(Client Hint)-aware loading',
-    thumbnail: `node-dpr-aware-loading`,
+    fileName: `node-dpr-aware-loading`,
     link: `${HOST_URL}node-dpr-aware-loading/`
   },
   {
     id: 14,
     title: 'Memory(Client Hint) considerate loading',
-    thumbnail: `node-memory-considerate-loading`,
+    fileName: `node-memory-considerate-loading`,
     link: `${HOST_URL}node-memory-considerate-loading/`
   },
   {
     id: 15,
     title: 'Network(Client Hint)-aware loading',
-    thumbnail: `node-network-aware-loading`,
+    fileName: `node-network-aware-loading`,
     link: `${HOST_URL}node-network-aware-loading/`
   },
   {
     id: 16,
     title: 'Network & Memory(Client Hints) considerate loading',
-    thumbnail: `node-network-memory-considerate-loading`,
+    fileName: `node-network-memory-considerate-loading`,
     link: `${HOST_URL}node-network-memory-considerate-loading/`
   },
   {
     id: 17,
     title: 'React Twitter - save-data loading based on Client Hint',
-    thumbnail: `react-twitter-save-data-loading-client-hint`,
+    fileName: `react-twitter-save-data-loading-client-hint`,
     link: `${HOST_URL}react-twitter-save-data-loading(client-hint)/`
   },
   {
     id: 18,
     title: 'React Twitter - save-data loading based on Hook',
-    thumbnail: `react-twitter-save-data-loading-hook`,
+    fileName: `react-twitter-save-data-loading-hook`,
     link: `${HOST_URL}react-twitter-save-data-loading(hook)/`
   },
   {
     id: 19,
     title: 'React Movie - network-aware loading',
-    thumbnail: `react-movie-network-aware-loading`,
+    fileName: `react-movie-network-aware-loading`,
     link: `${HOST_URL}react-movie-network-aware-loading/`
   },
   {
     id: 20,
     title: 'React Shrine - network-aware code-splitting',
-    thumbnail: `react-shrine-network-aware-code-splitting`,
+    fileName: `react-shrine-network-aware-code-splitting`,
     link: `${HOST_URL}react-shrine-network-aware-code-splitting/`
   },
   {
     id: 21,
     title: 'React eBay - network-aware code-splitting',
-    thumbnail: `react-ebay-network-aware-code-splitting`,
+    fileName: `react-ebay-network-aware-code-splitting`,
     link: `${HOST_URL}react-ebay-network-aware-code-splitting/`
   },
   {
     id: 22,
     title: 'React Dixie Mesh - memory considerate loading',
-    thumbnail: `react-dixie-memory-considerate-loading`,
+    fileName: `react-dixie-memory-considerate-loading`,
     link: `${HOST_URL}react-dixie-memory-considerate-loading/`
   },
   {
     id: 23,
     title: 'React Lottie - network-aware loading',
-    thumbnail: `react-lottie-network-aware-loading`,
+    fileName: `react-lottie-network-aware-loading`,
     link: `${HOST_URL}react-lottie-network-aware-loading/`
   },
   {
     id: 24,
     title: 'React Youtube - adaptive loading with mix of network, memory and hardware concurrency',
-    thumbnail: `react-youtube-adaptive-loading`,
+    fileName: `react-youtube-adaptive-loading`,
     link: `${HOST_URL}react-youtube-adaptive-loading/`
   }
 ];
