@@ -5,18 +5,25 @@ const ThumbnailGrid = ({ children }) => {
   const renderElements = () => {
     const gridElements = children.map(element => (
       <div key={element.key} className='grid-element'>
-        {element}
+        <div className='title'>{element.props.title}</div>
+        <div className='thumbnail'>
+          {element}
+        </div>
+        <div className='links'>
+          <a href={element.props.liveDemo} target='_blank' rel='noopener noreferrer'>Live Demo</a>
+          <a href={element.props.sourceCode} target='_blank' rel='noopener noreferrer'>Source Code</a>
+        </div>
         <style jsx>{`
           .grid-element {
+            position: relative;
+          }
+          .thumbnail {
             background: rgba(0, 140, 186, 0.5);
             height: 152px;
             animation: animateGrid 0.5s;
             padding: 4px;
             ${theme.imageHoveringEffect}
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          }
-          .grid-element:hover {
-            ${theme.imageHoveringEffect}
           }
           @keyframes animateGrid {
             from {
@@ -26,8 +33,28 @@ const ThumbnailGrid = ({ children }) => {
               opacity:1;
             }
           }
+          .title {
+            position: absolute;
+            padding: 0 4px;
+            width: 100%;
+            bottom: 32px;
+            font-size: 16px;
+            text-align: center;
+            color: #d8227d;
+            font-weight: 900;
+            text-shadow: 2px 2px 4px #000000;
+          }
+          .links {
+            display: flex;
+            font-size: 16px;
+            margin-top: 8px;
+            justify-content: space-between;
+          }
+          .links a:hover {
+            text-decoration: underline;
+          }
           @media screen and (min-width: 521px) {
-            .grid-element {
+            .thumbnail {
               height: 172px;
             }
           }

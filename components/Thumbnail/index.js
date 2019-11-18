@@ -4,7 +4,13 @@ import { useEffect } from 'react';
 import { imagePlaceHolder } from '../../styles/images';
 import { getDemosPath } from '../../data';
 
-const Thumbnail = ({ title, fileName, alt, onClick, clickable, lazyload }) => {
+const Thumbnail = ({
+  posterName,
+  alt,
+  onClick,
+  clickable,
+  lazyload
+}) => {
   useEffect(() => {
     if (lazyload) {
       (async () => {
@@ -36,8 +42,8 @@ const Thumbnail = ({ title, fileName, alt, onClick, clickable, lazyload }) => {
   return (
     <div className='thumbnail'>
       <picture>
-        <source srcSet={getDemosPath('webp') + fileName + '.webp'} type='image/webp' />
-        <source srcSet={getDemosPath('jpg') + fileName + '.jpg'} type='image/jpeg' />
+        <source srcSet={getDemosPath('webp') + posterName + '.webp'} type='image/webp' />
+        <source srcSet={getDemosPath('jpg') + posterName + '.jpg'} type='image/jpeg' />
         <img
           className={classes}
           data-src={imagePlaceHolder}
@@ -45,9 +51,6 @@ const Thumbnail = ({ title, fileName, alt, onClick, clickable, lazyload }) => {
           alt={alt}
           loading={lazyload ? 'lazy' : 'auto'} />
       </picture>
-      <div className='thumbnail-title'>
-        <p>{title}</p>
-      </div>
       <style jsx>{`
         .thumbnail {
           height: 100%;
@@ -58,9 +61,6 @@ const Thumbnail = ({ title, fileName, alt, onClick, clickable, lazyload }) => {
           object-fit: cover;
           transition: all 0.3s;
           box-sizing: border-box;
-        }
-        .thumbnail-title {
-          text-align: center;
         }
         .clickable {
           cursor: pointer;

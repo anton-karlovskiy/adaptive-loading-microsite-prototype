@@ -15,12 +15,17 @@ const Demos = () => (
       <CenterLayer>
         <ThumbnailGrid>
           { demos.map(demo => {
-              const { id, title, fileName, link } = demo;
-              return (
-                <a key={id} href={link} target='_blank' rel='noopener noreferrer'>
-                  <Thumbnail title={title} fileName={fileName} alt={title} lazyload />
-                </a>
-              );
+            const { id, title, posterName, sourceCode, liveDemo } = demo;
+            return (
+              <Thumbnail
+                key={id}
+                title={title}
+                posterName={posterName}
+                alt={title}
+                lazyload
+                sourceCode={sourceCode}
+                liveDemo={liveDemo} />
+            );
           }) }
         </ThumbnailGrid>
       </CenterLayer>
