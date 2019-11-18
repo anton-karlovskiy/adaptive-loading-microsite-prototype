@@ -18,7 +18,7 @@ export default css.global`
   }
   p {
     font-size: 14px;
-    color: #fafafa;
+    color: ${theme.colors.subText};
     margin: 0;
     margin-bottom: 16px;
     line-height: 1.5;

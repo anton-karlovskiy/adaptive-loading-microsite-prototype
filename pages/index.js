@@ -55,6 +55,9 @@ const Description = () => (
       .description > .highlights {
         flex: 1;
       }
+      .description > .highlights li {
+        line-height: 1.5;
+      }
       h4 {
         font-size: 14px;
       }

@@ -6,6 +6,8 @@ const theme = {
   },
   colors: {
     text: '#fff',
+    subText: 'rgb(214, 216, 218)',
+    anchorTextOnDark: '#3e7bb7',
     background: '#202124'
   },
   linkHoveringEffect: `
