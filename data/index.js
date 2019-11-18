@@ -179,7 +179,7 @@ Make it easier to target low-end devices while progressively adding high-end-onl
 
 You can import the hooks you wish to use as follows:
 
-\`\`\`js
+\`\`\`
 import { useNetworkStatus } from 'react-adaptive-hooks/network';
 import { useSaveData } from 'react-adaptive-hooks/save-data';
 import { useHardwareConcurrency } from 'react-adaptive-hooks/hardware-concurrency';
@@ -192,7 +192,7 @@ and then use them in your components. Examples for each hook and utility can be 
 
 \`useNetworkStatus\` React hook for getting network status (effective connection type)
 
-\`\`\`js
+\`\`\`
 import React from 'react';
 
 import { useNetworkStatus } from 'react-adaptive-hooks/network';
@@ -227,7 +227,7 @@ const MyComponent = () => {
 
 \`useSaveData\` Utility for getting Save Data whether it's Lite mode enabled or not
 
-\`\`\`js
+\`\`\`
 import React from 'react';
 
 import { useSaveData } from 'react-adaptive-hooks/save-data';
@@ -246,7 +246,7 @@ const MyComponent = () => {
 
 \`useHardwareConcurrency\` Utility for getting the number of logical CPU processor cores of the user's device
 
-\`\`\`js
+\`\`\`
 import React from 'react';
 
 import { useHardwareConcurrency } from 'react-adaptive-hooks/hardware-concurrency';
@@ -265,7 +265,7 @@ const MyComponent = () => {
 
 \`useMemoryStatus\` Utility for getting memory status of the device
 
-\`\`\`js
+\`\`\`
 import React from 'react';
 
 import { useMemoryStatus } from 'react-adaptive-hooks/memory';
@@ -286,7 +286,7 @@ const MyComponent = () => {
 
 Deliver a light, interactive core experience to users and progressively add high-end-only features on top, if a users hardware can handle it. Below is an example using the Network Status hook:
 
-\`\`\`js
+\`\`\`
 import React, { Suspense, lazy } from 'react';
 
 import { useNetworkStatus } from 'react-adaptive-hooks/network';
@@ -309,7 +309,7 @@ export default MyComponent;
 \`\`\`
 
 Light.js:
-\`\`\`js
+\`\`\`
 import React from 'react';
 
 const Light = ({ imageUrl, ...rest }) => (
@@ -320,7 +320,7 @@ export default Light;
 \`\`\`
 
 Full.js:
-\`\`\`js
+\`\`\`
 import React from 'react';
 import Magnifier from 'react-magnifier';
 
@@ -335,7 +335,7 @@ export default Full;
 
 We can extend \`React.lazy()\` by incorporating a check for a device or network signal. Below is an example of network-aware code-splitting. This allows us to conditionally load a light core experience or full-fat experience depending on the user's effective connection speed (via \`navigator.connection.effectiveType\`).
 
-\`\`\`js
+\`\`\`
 import React, { Suspense } from 'react';
 
 const Component = React.lazy(() => {
