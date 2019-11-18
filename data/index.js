@@ -396,6 +396,7 @@ const resourcesDoc = `
 
 ## References
 
+* [Sophisticated Adaptive Loading Strategies](https://medium.com/@roderickhsiao/sophisticated-adaptive-loading-strategies-7118341fcf91)  
 * [Adaptive serving based on network quality](https://web.dev/adaptive-serving-based-on-network-quality/)  
 * [Adaptive Serving using JavaScript and the Network Information API](https://addyosmani.com/blog/adaptive-serving/)  
 * [Serving Adaptive Components Using the Network Information API](https://dev.to/vorillaz/serving-adaptive-components-using-the-network-information-api-lbo)  
