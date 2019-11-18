@@ -1,11 +1,13 @@
 
 const banners = {
   factorType: {
-    src: '/images/factor-type.svg',
+    svg: '/images/factor-type.svg',
+    png: '/images/factor-type.png',
     alt: 'memory cpu network'
   },
   lowData: {
-    src: '/images/low-data.png',
+    webp: '/images/low-data.webp',
+    jpg: '/images/low-data.jpg',
     alt: 'phone with low data'
   }
 };

@@ -6,7 +6,7 @@ import HeroSection from '../hoc/HeroSection';
 import { pages } from '../utils/links';
 import { highlights } from '../utils/links';
 import theme from '../styles/theme';
-import { banners } from '../styles/images';
+import { banners, imagePlaceHolder } from '../styles/images';
 
 const Description = () => (
   <div className='description'>
@@ -78,12 +78,20 @@ const Illustration = () => (
   <div className='illustration'>
     <div className='factor-type'>
       <Link href='/' as ='/'>
-        <img width='100%' src={banners.factorType.src} alt={banners.factorType.alt} />
+        <picture>
+          <source srcSet={banners.factorType.svg} type='image/svg+xml' />
+          <source srcSet={banners.factorType.png} type='image/png' />
+          <img width='100%' data-src={imagePlaceHolder} alt={banners.factorType.alt} />
+        </picture>
       </Link>
     </div>
     <div className='low-data'>
       <Link href='/' as ='/'>
-        <img width='100%' src={banners.lowData.src} alt={banners.lowData.alt} />
+        <picture>
+          <source srcSet={banners.lowData.webp} type='image/webp' />
+          <source srcSet={banners.lowData.jpg} type='image/jpeg' />
+          <img width='100%' data-src={imagePlaceHolder} alt={banners.lowData.alt} />
+        </picture>
       </Link>
     </div>
     <style jsx>{`
