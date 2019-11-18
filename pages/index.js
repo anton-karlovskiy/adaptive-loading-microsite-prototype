@@ -81,7 +81,7 @@ const Illustration = () => (
         <picture>
           <source srcSet={banners.factorType.svg} type='image/svg+xml' />
           <source srcSet={banners.factorType.png} type='image/png' />
-          <img width='100%' data-src={imagePlaceHolder} alt={banners.factorType.alt} />
+          <img width='100%' src={imagePlaceHolder} alt={banners.factorType.alt} />
         </picture>
       </Link>
     </div>
@@ -90,7 +90,7 @@ const Illustration = () => (
         <picture>
           <source srcSet={banners.lowData.webp} type='image/webp' />
           <source srcSet={banners.lowData.jpg} type='image/jpeg' />
-          <img width='100%' data-src={imagePlaceHolder} alt={banners.lowData.alt} />
+          <img width='100%' src={imagePlaceHolder} alt={banners.lowData.alt} />
         </picture>
       </Link>
     </div>
