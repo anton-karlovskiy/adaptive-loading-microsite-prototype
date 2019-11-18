@@ -294,7 +294,7 @@ import { useNetworkStatus } from 'react-adaptive-hooks/network';
 const Full = lazy(() => import(/* webpackChunkName: "full" */ './Full.js'));
 const Light = lazy(() => import(/* webpackChunkName: "light" */ './Light.js'));
 
-function MyComponent() {
+const MyComponent = () => {
   const { effectiveConnectionType } = useNetworkStatus();
   return (
     <div>
@@ -303,7 +303,7 @@ function MyComponent() {
       </Suspense>
     </div>
   );
-}
+};
 
 export default MyComponent;
 \`\`\`
@@ -313,7 +313,7 @@ Light.js:
 import React from 'react';
 
 const Light = ({ imageUrl, ...rest }) => (
-  <img src={imageUrl} alt='product' {...rest} />
+  <img src={imageUrl} {...rest} />
 );
 
 export default Light;
@@ -340,29 +340,34 @@ import React, { Suspense } from 'react';
 
 const Component = React.lazy(() => {
   const effectiveType = navigator.connection ? navigator.connection.effectiveType : null
+
+  let module;
   switch (effectiveType) {
-    case "3g":
-      return import(/* webpackChunkName: "light" */ "./light.js");
+    case 'slow-2g':
+    case '2g':
+    case '3g':
+      module = import(/* webpackChunkName: "light" */ './Light.js');
       break;
-    case "4g":
-      return import(/* webpackChunkName: "full" */ "./full.js");
+    case '4g':
+      module = import(/* webpackChunkName: "full" */ './Full.js');
       break;
     default:
-      return import(/* webpackChunkName: "full" */ "./full.js")
+      module = import(/* webpackChunkName: "full" */ './Full.js');
+      break;
   }
+
+  return module;
 });
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Suspense fallback={<div>Loading...</div>}>
-          <Component />
-        </Suspense>
-      </header>
+    <div className='App'>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Component />
+      </Suspense>
     </div>
   );
-}
+};
 
 export default App;
 \`\`\`

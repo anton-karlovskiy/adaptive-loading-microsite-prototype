@@ -5,7 +5,6 @@ import { imagePlaceHolder } from '../../styles/images';
 import { getDemosPath } from '../../data';
 
 const Thumbnail = ({ title, fileName, alt, onClick, clickable, lazyload }) => {
-
   useEffect(() => {
     if (lazyload) {
       (async () => {

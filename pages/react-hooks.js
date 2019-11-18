@@ -29,9 +29,20 @@ const ReactHooks = () => (
       }
       .markdown-body :global(h1) {
         color: ${theme.colors.text};
+        border-bottom: 1px solid #eaecef;
+      }
+      .markdown-body :global(h2) {
+        border-bottom: 1px solid #eaecef;
       }
       .markdown-body :global(a) {
         color: ${theme.colors.anchorTextOnDark};
+      }
+      .markdown-body :global(p > code) {
+        color: rgb(175, 97, 97);
+        margin: 0;
+        padding: .2em .4em;
+        border-radius: 3px;
+        background-color: rgb(27, 29, 35);
       }
       .markdown-body :global(img) {
         background-color: transparent;
