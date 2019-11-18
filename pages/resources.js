@@ -1,11 +1,19 @@
 
 import Head from '../components/Head';
+import Markdown from '../components/Markdown';
+import HeroSection from '../hoc/HeroSection';
+import GitHubMarkdownWrapper from '../hoc/GitHubMarkdownWrapper';
 import { pages } from '../utils/links';
+import { resourcesDoc } from '../data';
 
 const Resources = () => (
   <>
     <Head title={pages.resources.title} />
-    <div>Resources</div>
+    <HeroSection>
+      <GitHubMarkdownWrapper>
+        <Markdown source={resourcesDoc} />
+      </GitHubMarkdownWrapper>
+    </HeroSection>
   </>
 );
 
