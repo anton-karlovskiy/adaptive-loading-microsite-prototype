@@ -1,7 +1,8 @@
 
 const withCSS = require('@zeit/next-css');
+const withTM = require('next-transpile-modules');
 
-module.exports = withCSS({
+module.exports = withTM(withCSS({
   webpack: config => {
     config.module.rules.push({
       test: /\.(eot|woff|woff2|ttf|svg|png|jpg|gif)$/,
@@ -14,5 +15,6 @@ module.exports = withCSS({
       }
     });
     return config;
-  }
-});
+  },
+  transpileModules: ['react-syntax-highlighter']
+}));

@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 import { head } from '../../styles/images';
 
-export default ({ title, description, keywords, canonical }) => (
+export default ({ title, description, keywords, canonical, children }) => (
   <Head>
     {title && <title>{title}</title>}
     <meta charSet='UTF-8' />
@@ -19,5 +19,6 @@ export default ({ title, description, keywords, canonical }) => (
     <link rel='icon' type='image/png' sizes='16x16' href={head.favicon16} />
     <link rel='manifest' href='/head/site.webmanifest' />
     <link rel='canonical' href={canonical} />
+    {children}
   </Head>
 );
