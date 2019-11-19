@@ -1,10 +1,9 @@
 
 import NavitationListItem from './NavitationListItem';
-
 import { pages } from '../../../utils/links';
 import theme from '../../../styles/theme';
 
-const NavigationItemList = () => (
+const NavigationList = () => (
   <ul>
     { Object.entries(pages).map(([key, value]) => (
       <NavitationListItem
@@ -37,4 +36,4 @@ const NavigationItemList = () => (
   </ul>
 );
 
-export default NavigationItemList;
+export default NavigationList;

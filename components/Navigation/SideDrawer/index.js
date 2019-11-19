@@ -1,44 +1,67 @@
 
-import { useState } from 'react';
-// TODO: double check if we really need material components
-import Drawer, { DrawerContent, DrawerHeader, DrawerTitle } from '@material/react-drawer';
-import List, {ListItem, ListItemGraphic, ListItemText} from '@material/react-list';
-import '@material/react-drawer/dist/drawer.css';
-import '@material/react-list/dist/list.css';
+// TODO: not implemented yet
+// import Logo from '../../Logo';
+// import NavigationList from '../NavigationList';
+import Backdrop from '../../UI/Backdrop';
 
-import SvgIcon from '../../SvgIcon';
-
-const SideDrawer = ({ title, open, closeDrawer }) => {
-  const [selectedIndex, setSelectedIndex] = useState(0);
-  
-  return (
-    <>
-      <Drawer
-        className='drawer'
-        modal
-        open={open}
-        onClose={closeDrawer}>
-        <DrawerHeader>
-          <DrawerTitle tag='h2'>
-            {title}
-          </DrawerTitle>
-        </DrawerHeader>
-        <DrawerContent>
-          <List singleSelection selectedIndex={selectedIndex}>
-            <ListItem>
-              <ListItemGraphic graphic={<SvgIcon name='folder'/>} />
-              <ListItemText primaryText='Mail' />
-            </ListItem>
-          </List>
-        </DrawerContent>
-      </Drawer>
-      <style jsx>{`
-        :global(.drawer) {
-          z-index: 20;
-        }
-      `}</style>
-    </>
-  );
+const SideDrawer = ({ isOpened, onClose }) => {
+    let attachedClasses = ['side-drawer', 'is-closed'];
+    if (isOpened) {
+      attachedClasses = ['side-drawer', 'is-opened'];
+    }
+    return (
+      <>
+        <Backdrop isShown={isOpened} onClick={onClose}/>
+        <aside className={attachedClasses.join(' ')}>
+          <div className='logo'>
+            LOGO
+            {/* <Logo /> */}
+          </div>
+          <nav>
+            NAV
+            {/* <NavigationList /> */}
+          </nav>
+        </aside>
+        <style jsx>{`
+          .side-drawer {
+            position: fixed;
+            width: 280px;
+            max-width: 70%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: 200;
+            background-color: #fff;
+            padding: 32px 16px;
+            box-sizing: border-box;
+            transition: transform 0.3s ease-out;
+            
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+            border-color: rgba(0, 0, 0, 0.12);
+            border-right-width: 1px;
+            border-right-style: solid;
+            overflow: hidden;
+          }
+          .is-opened {
+            transform: translateX(0);
+          }
+          .is-closed {
+            transform: translateX(-100%);
+          }
+          // TODO: not implemented yet
+          // .logo {
+          //   height: 11%;
+          //   margin-bottom: 32px;
+          // }
+          @media (min-width: 521px) {
+            .side-drawer {
+              // display: none;
+            }
+          }
+        `}</style>
+      </>
+    );
 };
 
 export default SideDrawer;

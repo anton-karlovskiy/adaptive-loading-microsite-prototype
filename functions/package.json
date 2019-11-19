@@ -12,8 +12,6 @@
     "node": "8"
   },
   "dependencies": {
-    "@material/react-drawer": "^0.15.0",
-    "@material/react-list": "^0.15.0",
     "@zeit/next-css": "^1.0.1",
     "firebase-admin": "^8.0.0",
     "firebase-functions": "^3.1.0",

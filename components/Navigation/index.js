@@ -17,8 +17,8 @@ const Navigation = () => {
 
   return (
     <>
-      <SideDrawer title='Adaptive Loading' open={isDrawerOpen} closeDrawer={closeDrawerHandler} />
       <AppBar openDrawer={openDrawerHandler} />
+      <SideDrawer isOpened={isDrawerOpen} onClose={closeDrawerHandler} />
     </>
   );
 };

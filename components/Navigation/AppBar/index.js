@@ -1,7 +1,7 @@
 
 import Link from 'next/link';
 
-import NavigationItemList from '../NavigationItemList';
+import NavigationList from '../NavigationList';
 import SvgIcon from '../../SvgIcon';
 import theme from '../../../styles/theme';
 import { pages } from '../../../utils/links';
@@ -17,7 +17,7 @@ const AppBar = ({ openDrawer }) => (
           </Link>
         </div>
         <div className='top-app-bar-section top-app-bar-section__end'>
-          <NavigationItemList />
+          <NavigationList />
           {/* TODO: hidden for now */}
           {/* <SvgIcon name='search' withHoverEffect onClick={() => console.log('[AppBar] search click')} /> */}
         </div>
