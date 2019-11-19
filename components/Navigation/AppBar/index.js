@@ -34,6 +34,7 @@ const AppBar = ({ openDrawer }) => (
         background-color: ${theme.colors.headerBackground};
         transition: box-shadow 200ms linear;
         box-shadow: 0 2px 4px rgba(0,0,0,.5);
+        z-index: 10;
       }
       .top-app-bar-row {
         position: relative;
