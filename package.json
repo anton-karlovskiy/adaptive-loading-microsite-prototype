@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "deploy": "firebase deploy",
+    "deploy": "cp -r 'next' 'functions/' && firebase deploy",
     "serve": "firebase serve"
   },
   "dependencies": {

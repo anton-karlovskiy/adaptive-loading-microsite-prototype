@@ -17,5 +17,5 @@ module.exports = withTM(withCSS({
     return config;
   },
   transpileModules: ['react-syntax-highlighter'],
-  distDir: './functions/next'
+  distDir: './next'
 }));
