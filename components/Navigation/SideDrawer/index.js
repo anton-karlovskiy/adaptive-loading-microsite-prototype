@@ -12,24 +12,32 @@ const SideDrawer = ({ title, open, closeDrawer }) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   
   return (
-    <Drawer
-      modal
-      open={open}
-      onClose={closeDrawer}>
-      <DrawerHeader>
-        <DrawerTitle tag='h2'>
-          {title}
-        </DrawerTitle>
-      </DrawerHeader>
-      <DrawerContent>
-        <List singleSelection selectedIndex={selectedIndex}>
-          <ListItem>
-            <ListItemGraphic graphic={<SvgIcon name='folder'/>} />
-            <ListItemText primaryText='Mail' />
-          </ListItem>
-        </List>
-      </DrawerContent>
-    </Drawer>
+    <>
+      <Drawer
+        className='drawer'
+        modal
+        open={open}
+        onClose={closeDrawer}>
+        <DrawerHeader>
+          <DrawerTitle tag='h2'>
+            {title}
+          </DrawerTitle>
+        </DrawerHeader>
+        <DrawerContent>
+          <List singleSelection selectedIndex={selectedIndex}>
+            <ListItem>
+              <ListItemGraphic graphic={<SvgIcon name='folder'/>} />
+              <ListItemText primaryText='Mail' />
+            </ListItem>
+          </List>
+        </DrawerContent>
+      </Drawer>
+      <style jsx>{`
+        :global(.drawer) {
+          z-index: 20;
+        }
+      `}</style>
+    </>
   );
 };
 
