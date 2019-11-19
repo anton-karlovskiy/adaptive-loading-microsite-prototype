@@ -3,6 +3,7 @@
 // import Logo from '../../Logo';
 // import NavigationList from '../NavigationList';
 import Backdrop from '../../UI/Backdrop';
+import theme from '../../../styles/theme';
 
 const SideDrawer = ({ isOpened, onClose }) => {
     let attachedClasses = ['side-drawer', 'is-closed'];
@@ -54,7 +55,7 @@ const SideDrawer = ({ isOpened, onClose }) => {
           //   height: 11%;
           //   margin-bottom: 32px;
           // }
-          @media (min-width: 521px) {
+          @media (min-width: ${theme.breakpoint.mobile}px) {
             .side-drawer {
               // display: none;
             }

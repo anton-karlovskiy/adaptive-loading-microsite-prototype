@@ -18,7 +18,11 @@ const theme = {
   imageHoveringEffect: `
     box-shadow: 0 0 0 1px rgba(255,255,255,.16);
     transition: box-shadow .3s cubic-bezier(.4,0,.2,1);
-  `
+  `,
+  breakpoint: {
+    mobile: 521,
+    tablet: 921
+  }
 };
 
 export default theme;

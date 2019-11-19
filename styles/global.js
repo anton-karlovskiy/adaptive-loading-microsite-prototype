@@ -47,7 +47,7 @@ export default css.global`
     margin: 0;
     padding: 0;
   }
-  @media screen and (min-width: 521px) {
+  @media screen and (min-width: ${theme.breakpoint.mobile}px) {
     h1 {
       font-size: 50px;
     }
@@ -55,7 +55,7 @@ export default css.global`
       font-size: 15px;
     }
   }
-  @media screen and (min-width: 921px) {
+  @media screen and (min-width: ${theme.breakpoint.tablet}px) {
     h1 {
       font-size: 60px;
     }

@@ -21,7 +21,7 @@ const NavigationList = () => (
         color: #9e9e9e;
         ${theme.linkHoveringEffect}
       }
-      @media screen and (max-width: 920px) {
+      @media screen and (max-width: ${theme.breakpoint.tablet - 1}px) {
         ul {
           position: absolute;
           left: 0;

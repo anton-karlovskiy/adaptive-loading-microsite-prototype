@@ -54,7 +54,7 @@ const AppBar = ({ openDrawer }) => (
       .top-app-bar-section__end {
         justify-content: flex-end;
       }
-      @media screen and (min-width: 921px) {
+      @media screen and (min-width: ${theme.breakpoint.tablet}px) {
         .top-app-bar {
           height: auto;
         }

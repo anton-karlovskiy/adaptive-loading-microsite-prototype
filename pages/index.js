@@ -68,7 +68,7 @@ const Description = () => (
       a:visited {
         color: #a6a6a6;
       }
-      @media screen and (max-width: 920px) {
+      @media screen and (max-width: ${theme.breakpoint.tablet - 1}px) {
         .highlights {
           display: none;
         }
@@ -121,7 +121,7 @@ const Illustration = () => (
       .illustration > .low-data:hover {
         ${theme.imageHoveringEffect}
       }
-      @media screen and (max-width: 520px) {
+      @media screen and (max-width: ${theme.breakpoint.mobile - 1}px) {
         .illustration {
           flex-direction: column;
         }
@@ -145,7 +145,7 @@ const Home = () => (
         max-width: 1520px;
         padding: 0;
       }
-      @media screen and (min-width: 921px) {
+      @media screen and (min-width: ${theme.breakpoint.tablet}px) {
         .container {
           padding: 0 40px;
         }

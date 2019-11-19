@@ -37,7 +37,7 @@ const NavitationListItem = ({ title, href, as }) => {
           transform-origin: bottom;
           transition: transform 235ms cubic-bezier(.4,0,.2,1);
         }
-        @media only screen and (min-width: 921px) {
+        @media only screen and (min-width: ${theme.breakpoint.tablet}px) {
           a {
             line-height: 72px;
             margin: 0 16px;
