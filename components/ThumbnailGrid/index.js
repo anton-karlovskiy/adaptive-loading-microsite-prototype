@@ -10,8 +10,14 @@ const ThumbnailGrid = ({ children }) => {
           {element}
         </div>
         <div className='links'>
-          <a href={element.props.liveDemo} target='_blank' rel='noopener noreferrer'>Live Demo</a>
-          <a href={element.props.sourceCode} target='_blank' rel='noopener noreferrer'>Source Code</a>
+          <a href={element.props.liveDemo} target='_blank' rel='noopener noreferrer'>
+            <span className='desktop'>Live Demo</span>
+            <span className='mobile'>Live</span>
+          </a>
+          <a href={element.props.sourceCode} target='_blank' rel='noopener noreferrer'>
+            <span className='desktop'>Source Code</span>
+            <span className='mobile'>Source</span>
+          </a>
         </div>
         <style jsx>{`
           .grid-element {
@@ -35,12 +41,15 @@ const ThumbnailGrid = ({ children }) => {
           }
           .title {
             position: absolute;
-            padding: 0 4px;
+            top: -72px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
             width: 100%;
-            bottom: 32px;
-            font-size: 16px;
+            min-height: 60px;
             text-align: center;
-            color: #d8227d;
+            padding: 0 4px;
+            font-size: 16px;
             font-weight: 900;
             text-shadow: 2px 2px 4px #000000;
           }
@@ -48,7 +57,11 @@ const ThumbnailGrid = ({ children }) => {
             display: flex;
             font-size: 16px;
             margin-top: 8px;
+            padding: 0 12px;
             justify-content: space-between;
+          }
+          .links .desktop {
+            display: none;
           }
           .links a:hover {
             text-decoration: underline;
@@ -56,6 +69,12 @@ const ThumbnailGrid = ({ children }) => {
           @media screen and (min-width: 521px) {
             .thumbnail {
               height: 172px;
+            }
+            .links .mobile {
+              display: none;
+            }
+            .links .desktop {
+              display: block;
             }
           }
         `}</style>
@@ -71,19 +90,20 @@ const ThumbnailGrid = ({ children }) => {
         .grid-container {
           display: grid;
           grid-column-gap: 10px;
-          grid-row-gap: 60px;
+          margin-top: 36px;
+          grid-row-gap: 76px;
           grid-template-columns: auto auto;
         }
         @media screen and (min-width: 521px) {
           .grid-container {
             grid-column-gap: 20px;
-            grid-row-gap: 40px;
+            grid-row-gap: 72px;
           }
         }
         @media screen and (min-width: 921px) {
           .grid-container {
             grid-column-gap: 40px;
-            grid-row-gap: 60px;
+            grid-row-gap: 80px;
             grid-template-columns: auto auto auto auto;  
           }
         }

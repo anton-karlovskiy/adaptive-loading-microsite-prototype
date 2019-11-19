@@ -166,7 +166,7 @@ const demos = [
   },
   {
     id: 24,
-    title: 'React Youtube - adaptive loading with mix of network, memory and hardware concurrency',
+    title: 'React Youtube - adaptive loading with mix of network, memory and CPU',
     posterName: `react-youtube-adaptive-loading`,
     sourceCode: `${REPO_URL}tree/master/react-youtube-adaptive-loading`,
     liveDemo: `${HOST_URL}react-youtube-adaptive-loading/`

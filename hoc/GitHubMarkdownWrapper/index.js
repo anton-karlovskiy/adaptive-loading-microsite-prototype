@@ -9,10 +9,10 @@ const GitHubMarkdownWrapper = ({ children }) => (
     <style jsx>{`
       .markdown-body {
         box-sizing: border-box;
-        min-width: 200px;
-        max-width: 980px;
         margin: 0 auto;
-        padding: 45px;
+        min-width: 200px;
+        max-width: 1024px;
+        padding: 0 20px;
         color: ${theme.colors.subText};
         font-family: ${theme.fontFamily.roboto};
       }
