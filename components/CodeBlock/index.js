@@ -1,7 +1,7 @@
 
 import PropTypes from 'prop-types';
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import { solarizedDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { monokaiSublime } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 const CodeBlock = ({ language, value, style }) => (
   <SyntaxHighlighter language={language} style={style}>
@@ -17,7 +17,7 @@ CodeBlock.propTypes = {
 
 CodeBlock.defaultProps = {
   language: 'javascript',
-  style: solarizedDark
+  style: monokaiSublime
 };
 
 export default CodeBlock;
