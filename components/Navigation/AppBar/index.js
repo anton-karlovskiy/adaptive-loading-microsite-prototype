@@ -1,63 +1,60 @@
 
 import Link from 'next/link';
-// TODO: double check if we really need material components
-import TopAppBar, {
-  TopAppBarIcon,
-  TopAppBarRow,
-  TopAppBarSection,
-  TopAppBarTitle
-} from '@material/react-top-app-bar';
-import '@material/react-top-app-bar/dist/top-app-bar.css';
 
 import NavigationItemList from '../NavigationItemList';
 import SvgIcon from '../../SvgIcon';
+import theme from '../../../styles/theme';
 import { pages } from '../../../utils/links';
 
 const AppBar = ({ openDrawer }) => (
   <>
-    <TopAppBar className='top-app-bar' fixed>
-      <TopAppBarRow className='top-app-bar-row'>
-        <TopAppBarSection className='top-app-bar-section' align='start'>
-          <TopAppBarIcon navIcon tabIndex={0}>
-            <SvgIcon name='menu' withHoverEffect onClick={openDrawer} />
-          </TopAppBarIcon>
-          <TopAppBarTitle className='top-app-bar-title'>
-            <Link href={pages.home.href} as={pages.home.as}>
-              <a><SvgIcon name='main' /></a>
-            </Link>
-          </TopAppBarTitle>
-        </TopAppBarSection>
-        <TopAppBarSection className='top-app-bar-section' align='end' role='toolbar'>
+    <header className='top-app-bar'>
+      <div className='top-app-bar-row'>
+        <div className='top-app-bar-section top-app-bar-section__start'>
+          <SvgIcon name='menu' withHoverEffect onClick={openDrawer} />
+          <Link href={pages.home.href} as={pages.home.as}>
+            <a><SvgIcon name='main' /></a>
+          </Link>
+        </div>
+        <div className='top-app-bar-section top-app-bar-section__end'>
           <NavigationItemList />
           {/* TODO: hidden for now */}
-          {/* <TopAppBarIcon actionItem tabIndex={0}>
-            <SvgIcon name='search' withHoverEffect onClick={() => console.log('[AppBar] search click')} />
-          </TopAppBarIcon> */}
-        </TopAppBarSection>
-      </TopAppBarRow>
-    </TopAppBar>
+          {/* <SvgIcon name='search' withHoverEffect onClick={() => console.log('[AppBar] search click')} /> */}
+        </div>
+      </div>
+    </header>
     <style jsx>{`
-      :global(.top-app-bar) {
-        box-shadow: 0 2px 4px rgba(0,0,0,.5);
-        background-color: #212121;
+      .top-app-bar {
+        position: fixed;
+        width: 100%;
         height: 112px;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        background-color: ${theme.colors.headerBackground};
+        transition: box-shadow 200ms linear;
+        box-shadow: 0 2px 4px rgba(0,0,0,.5);
       }
-      
-      :global(.top-app-bar-row) {
+      .top-app-bar-row {
+        position: relative;
+        display: flex;
+        width: 100%;
         height: 72px;
       }
-      
-      :global(.top-app-bar-title) {
-        display: flex;
-        padding-left: 10px;
-      }
-      
-      :global(.top-app-bar-section) {
+      .top-app-bar-section {
         padding: 0 12px;
+        display: inline-flex;
+        flex: 1 1 auto;
+        align-items: center;
       }
-      
+      .top-app-bar-section__start {
+        justify-content: flex-start;
+      }
+      .top-app-bar-section__end {
+        justify-content: flex-end;
+      }
       @media screen and (min-width: 921px) {
-        :global(.top-app-bar) {
+        .top-app-bar {
           height: auto;
         }
       }

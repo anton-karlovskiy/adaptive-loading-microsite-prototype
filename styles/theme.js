@@ -9,7 +9,8 @@ const theme = {
     text: '#fff',
     subText: 'rgb(214, 216, 218)',
     anchorTextOnDark: '#3e7bb7',
-    background: '#202124'
+    background: '#202124',
+    headerBackground: '#212121'
   },
   linkHoveringEffect: `
     transition: color .1s cubic-bezier(.4,0,.2,1);
