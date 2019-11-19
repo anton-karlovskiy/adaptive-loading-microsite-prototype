@@ -14,6 +14,7 @@ const GitHubMarkdownWrapper = ({ children }) => (
         margin: 0 auto;
         padding: 45px;
         color: ${theme.colors.subText};
+        font-family: ${theme.fontFamily.roboto};
       }
       .markdown-body :global(h1) {
         color: ${theme.colors.text};

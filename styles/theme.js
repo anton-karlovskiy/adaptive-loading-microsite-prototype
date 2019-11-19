@@ -2,7 +2,8 @@
 const theme = {
   fontFamily: {
     sansSerif: '-apple-system, "Helvetica Neue", Arial, sans-serif',
-    mono: 'Menlo, Monaco, monospace'
+    mono: 'Menlo, Monaco, monospace',
+    roboto: '"Roboto", sans-serif'
   },
   colors: {
     text: '#fff',

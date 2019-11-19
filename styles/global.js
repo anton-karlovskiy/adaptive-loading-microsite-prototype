@@ -10,7 +10,7 @@ export default css.global`
   body {
     background: ${theme.colors.background};
     color: ${theme.colors.text};
-    font-family: ${theme.fontFamily.sansSerif};
+    font-family: ${theme.fontFamily.roboto};
     margin: 0;
     padding: 0;
     font-size: calc(10px + 1vmin);
