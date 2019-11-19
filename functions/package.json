@@ -1,15 +1,19 @@
 {
-  "name": "adaptive-loading-microsite",
-  "version": "0.1.0",
-  "private": true,
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "deploy": "firebase deploy",
-    "serve": "firebase serve"
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "8"
   },
   "dependencies": {
+    "firebase-admin": "^8.0.0",
+    "firebase-functions": "^3.1.0",
     "next": "9.1.1",
     "react": "16.11.0",
     "react-dom": "16.11.0",
@@ -24,6 +28,7 @@
     "react-syntax-highlighter": "^11.0.2"
   },
   "devDependencies": {
-    "next-transpile-modules": "^2.3.1"
-  }
+    "firebase-functions-test": "^0.1.6"
+  },
+  "private": true
 }
