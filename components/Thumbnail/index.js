@@ -2,7 +2,7 @@
 import { useEffect } from 'react';
 
 import { imagePlaceHolder } from '../../styles/images';
-import { getDemosPath } from '../../data';
+import { getDemosPath } from '../../data/demos';
 
 const Thumbnail = ({
   posterName,

@@ -4,7 +4,7 @@ import Markdown from '../components/Markdown';
 import HeroSection from '../hoc/HeroSection';
 import GitHubMarkdownWrapper from '../hoc/GitHubMarkdownWrapper';
 import { pages } from '../utils/links';
-import { resourcesDoc } from '../data';
+import { resourcesDoc } from '../data/resources';
 
 const Resources = () => (
   <>

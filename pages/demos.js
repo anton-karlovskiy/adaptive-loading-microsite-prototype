@@ -6,7 +6,7 @@ import HeroSection from '../hoc/HeroSection';
 import CenterLayer from '../hoc/CenterLayer';
 import Head from '../components/Head';
 import { pages } from '../utils/links';
-import { demos } from '../data';
+import { demosMeta } from '../data/demos';
 
 const Demos = () => (
   <>
@@ -14,8 +14,8 @@ const Demos = () => (
     <HeroSection>
       <CenterLayer>
         <ThumbnailGrid>
-          { demos.map(demo => {
-            const { id, title, posterName, sourceCode, liveDemo } = demo;
+          { demosMeta.map(demoMeta => {
+            const { id, title, posterName, sourceCode, liveDemo } = demoMeta;
             return (
               <Thumbnail
                 key={id}
