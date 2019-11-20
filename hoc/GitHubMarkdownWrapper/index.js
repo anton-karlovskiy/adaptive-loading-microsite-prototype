@@ -11,7 +11,7 @@ const GitHubMarkdownWrapper = ({ children }) => (
         box-sizing: border-box;
         margin: 0 auto;
         min-width: 200px;
-        max-width: 1024px;
+        max-width: 1080px;
         padding: 0 20px;
         color: ${theme.colors.subText};
         font-family: ${theme.fontFamily.roboto};

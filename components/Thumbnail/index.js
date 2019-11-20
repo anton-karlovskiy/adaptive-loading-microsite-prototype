@@ -1,6 +1,7 @@
 
 import { useEffect } from 'react';
 
+import theme from '../../styles/theme';
 import { imagePlaceHolder } from '../../styles/images';
 import { getDemosPath } from '../../data/demos';
 
@@ -45,6 +46,8 @@ const Thumbnail = ({
         <source srcSet={getDemosPath('webp') + posterName + '.webp'} type='image/webp' />
         <source srcSet={getDemosPath('jpg') + posterName + '.jpg'} type='image/jpeg' />
         <img
+          width='272px'
+          height='164px'
           className={classes}
           data-src={imagePlaceHolder}
           onClick={onClick}
@@ -67,6 +70,18 @@ const Thumbnail = ({
         }
         .clickable:hover {
           opacity: 0.8;
+        }
+        @media only screen and (min-width: ${theme.breakpoint.mobile}px) {
+          .thumbnail img {
+            width: 413.5px;
+            height: 164px;
+          }
+        }
+        @media only screen and (min-width: ${theme.breakpoint.tablet}px) {
+          .thumbnail img {
+            width: 272px;
+            height: 164px;
+          }
         }
       `}</style>
     </div>

@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "NODE_ENV=production && next start",
     "deploy": "cp -r 'next' 'functions/' && firebase deploy",
-    "serve": "firebase serve"
+    "serve": "firebase serve",
+    "logs": "cd functions && npm run logs"
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
