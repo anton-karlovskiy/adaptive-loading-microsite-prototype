@@ -1,6 +1,6 @@
 
 import Head from '../components/Head';
-import Markdown from '../components/Markdown';
+import ReactMarkdownWithCode from '../components/ReactMarkdownWithCode';
 import HeroSection from '../hoc/HeroSection';
 import GitHubMarkdownWrapper from '../hoc/GitHubMarkdownWrapper';
 import { pages } from '../utils/links';
@@ -11,7 +11,7 @@ const ReactHooks = () => (
     <Head title={pages.reactHooks.title} />
     <HeroSection>
       <GitHubMarkdownWrapper>
-        <Markdown source={reactHooksDoc} />
+        <ReactMarkdownWithCode source={reactHooksDoc} />
       </GitHubMarkdownWrapper>
     </HeroSection>
   </>

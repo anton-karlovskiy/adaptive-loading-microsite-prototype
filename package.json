@@ -15,7 +15,6 @@
     "github-markdown-css": "^3.0.1",
     "lazysizes": "^5.2.0-beta1",
     "next": "9.1.1",
-    "prop-types": "^15.7.2",
     "react": "16.11.0",
     "react-dom": "16.11.0",
     "react-markdown": "^4.2.2",
