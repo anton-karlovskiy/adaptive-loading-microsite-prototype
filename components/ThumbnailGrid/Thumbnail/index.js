@@ -1,9 +1,9 @@
 
 import { useEffect } from 'react';
 
-import theme from '../../styles/theme';
-import { imagePlaceHolder } from '../../styles/images';
-import { getDemosPath } from '../../data/demos';
+import theme from '../../../styles/theme';
+import { imagePlaceHolder } from '../../../styles/images';
+import { getDemosPath } from '../../../data/demos';
 
 const Thumbnail = ({
   posterName,

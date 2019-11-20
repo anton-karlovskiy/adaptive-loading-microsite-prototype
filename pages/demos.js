@@ -1,7 +1,7 @@
 
 
 import ThumbnailGrid from '../components/ThumbnailGrid';
-import Thumbnail from '../components/Thumbnail';
+import Thumbnail from '../components/ThumbnailGrid/Thumbnail';
 import HeroSection from '../hoc/HeroSection';
 import CenterLayer from '../hoc/CenterLayer';
 import Head from '../components/Head';
