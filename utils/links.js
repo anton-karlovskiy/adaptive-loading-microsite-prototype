@@ -23,20 +23,20 @@ const pages = {
 };
 
 const highlights = {
-  getStarted: {
-    title: 'Get Started',
-    href: '/get-started',
-    as: '/get-started'
+  gitHub: {
+    title: 'GitHub',
+    href: 'https://github.com/GoogleChromeLabs/react-adaptive-hooks/',
+    as: 'https://github.com/GoogleChromeLabs/react-adaptive-hooks/'
   },
   chromeDevSummitTalk: {
     title: 'Chrome Dev Summit talk',
-    href: '/chrome-dev-summit-talk',
-    as: '/chrome-dev-summit-talk'
+    href: 'https://www.youtube.com/watch?v=puUPpVrIRkc',
+    as: 'https://www.youtube.com/watch?v=puUPpVrIRkc'
   },
   deviceYearClass: {
-    title: 'Device Year Class',
-    href: '/device-year-class',
-    as: '/device-year-class'
+    title: 'Device Year class',
+    href: 'https://engineering.fb.com/android/year-class-a-classification-system-for-android/',
+    as: 'https://engineering.fb.com/android/year-class-a-classification-system-for-android/'
   }
 };
 

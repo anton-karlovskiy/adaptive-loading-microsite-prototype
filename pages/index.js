@@ -20,9 +20,9 @@ const Description = () => (
       <ul>
         <li>
           <Link
-            href={highlights.getStarted.href}
-            as={highlights.getStarted.as}>
-            <a>{highlights.getStarted.title}</a>
+            href={highlights.gitHub.href}
+            as={highlights.gitHub.as}>
+            <a>{highlights.gitHub.title}</a>
           </Link>
         </li>
         <li>
