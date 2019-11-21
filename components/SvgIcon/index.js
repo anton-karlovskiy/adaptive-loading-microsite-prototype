@@ -1,12 +1,10 @@
 
 const SvgIcon = ({ name, width, height, onClick, withHoverEffect }) => (
-  // ray test touch <
   <button
     id='svg-icon'
     aria-label='icon'
     className={withHoverEffect ? 'svg-icon-container' : 'svg-icon-container__no-hover-effect'}
     onClick={onClick}>
-    {/* ray test touch > */}
     <div className='svg-icon'></div>
     <style jsx>{`
       .svg-icon-container, .svg-icon-container__no-hover-effect  {
