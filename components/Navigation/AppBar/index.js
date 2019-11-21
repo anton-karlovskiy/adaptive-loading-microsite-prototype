@@ -11,14 +11,15 @@ const AppBar = ({ openDrawer }) => (
     <header className='top-app-bar'>
       <div className='top-app-bar-row'>
         <div className='top-app-bar-section top-app-bar-section__start'>
-          <SvgIcon name='menu' withHoverEffect onClick={openDrawer} />
+          {/* TODO: side drawer hidden for now */}
+          {/* <SvgIcon name='menu' withHoverEffect onClick={openDrawer} /> */}
           <Link href={pages.home.href} as={pages.home.as}>
             <a><SvgIcon name='main' /></a>
           </Link>
         </div>
         <div className='top-app-bar-section top-app-bar-section__end'>
           <NavigationList />
-          {/* TODO: hidden for now */}
+          {/* TODO: search button hidden for now */}
           {/* <SvgIcon name='search' withHoverEffect onClick={() => console.log('[AppBar] search click')} /> */}
         </div>
       </div>

@@ -5,6 +5,7 @@
 import Backdrop from '../../UI/Backdrop';
 import theme from '../../../styles/theme';
 
+// TODO: side drawer hidden for now
 const SideDrawer = ({ isOpened, onClose }) => {
     let attachedClasses = ['side-drawer', 'is-closed'];
     if (isOpened) {
