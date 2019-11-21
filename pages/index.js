@@ -19,25 +19,13 @@ const Description = () => (
       <h4 className='uppercase'>HIGHLIGHTS</h4>
       <ul>
         <li>
-          <Link
-            href={highlights.gitHub.href}
-            as={highlights.gitHub.as}>
-            <a>{highlights.gitHub.title}</a>
-          </Link>
+          <a href={highlights.gitHub.href}>{highlights.gitHub.title}</a>
         </li>
         <li>
-          <Link
-            href={highlights.chromeDevSummitTalk.href}
-            href={highlights.chromeDevSummitTalk.as}>
-            <a>{highlights.chromeDevSummitTalk.title}</a>
-          </Link>
+          <a href={highlights.chromeDevSummitTalk.href}>{highlights.chromeDevSummitTalk.title}</a>
         </li>
         <li>
-          <Link
-            href={highlights.deviceYearClass.href}
-            as={highlights.deviceYearClass.as}>
-            <a>{highlights.deviceYearClass.title}</a>
-          </Link>
+          <a href={highlights.deviceYearClass.href}>{highlights.deviceYearClass.title}</a>
         </li>
       </ul>
     </div>

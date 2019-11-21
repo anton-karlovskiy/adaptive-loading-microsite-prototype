@@ -25,18 +25,15 @@ const pages = {
 const highlights = {
   gitHub: {
     title: 'GitHub',
-    href: 'https://github.com/GoogleChromeLabs/react-adaptive-hooks/',
-    as: 'https://github.com/GoogleChromeLabs/react-adaptive-hooks/'
+    href: 'https://github.com/GoogleChromeLabs/react-adaptive-hooks/'
   },
   chromeDevSummitTalk: {
     title: 'Chrome Dev Summit talk',
-    href: 'https://www.youtube.com/watch?v=puUPpVrIRkc',
-    as: 'https://www.youtube.com/watch?v=puUPpVrIRkc'
+    href: 'https://www.youtube.com/watch?v=puUPpVrIRkc'
   },
   deviceYearClass: {
     title: 'Device Year class',
-    href: 'https://engineering.fb.com/android/year-class-a-classification-system-for-android/',
-    as: 'https://engineering.fb.com/android/year-class-a-classification-system-for-android/'
+    href: 'https://engineering.fb.com/android/year-class-a-classification-system-for-android/'
   }
 };
 
