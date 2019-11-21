@@ -15,9 +15,7 @@ const GitHubMarkdownWrapper = ({ children }) => (
         padding: 0 20px;
         color: ${theme.colors.subText};
         font-family: ${theme.fontFamily.roboto};
-        // ray test touch <
         font-size: 1em;
-        // ray test touch >
       }
       .markdown-body :global(h1) {
         color: ${theme.colors.text};
@@ -26,19 +24,15 @@ const GitHubMarkdownWrapper = ({ children }) => (
       .markdown-body :global(h2) {
         border-bottom: 1px solid #eaecef;
       }
-      // ray test touch <
       .markdown-body :global(h4) {
         font-size: 1.1em;
       }
-      // ray test touch >
       .markdown-body :global(a) {
         color: ${theme.colors.anchorTextOnDark};
       }
-      // ray test touch <
       .markdown-body :global(p) {
         font-size: 1em;
       }
-      // ray test touch >
       .markdown-body :global(p > code) {
         color: rgb(175, 97, 97);
         margin: 0;
