@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 import Head from '../components/Head';
 import HeroSection from '../hoc/HeroSection';
+import CenterLayer from '../hoc/CenterLayer';
 import { pages } from '../utils/links';
 import { highlights } from '../utils/links';
 import theme from '../styles/theme';
@@ -134,23 +135,11 @@ const Home = () => (
   <>
     <Head title={pages.home.title} />
     <HeroSection>
-      <div className='container'>
+      <CenterLayer>
         <Description />
         <Illustration />
-      </div>
+      </CenterLayer>
     </HeroSection>
-    <style jsx>{`
-      .container {
-        margin: 0 auto;
-        max-width: 1520px;
-        padding: 0;
-      }
-      @media screen and (min-width: ${theme.breakpoint.tablet}px) {
-        .container {
-          padding: 0 40px;
-        }
-      }
-    `}</style>
   </>
 );
 
