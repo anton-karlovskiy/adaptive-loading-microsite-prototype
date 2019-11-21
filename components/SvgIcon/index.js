@@ -29,7 +29,7 @@ const SvgIcon = ({ name, width, height, onClick, withHoverEffect }) => (
       .svg-icon {
         width: ${width || '24px'};
         height: ${height || '24px'};
-        background-image: url(/images/icons/${name}.svg);
+        background-image: url(/static/images/icons/${name}.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;

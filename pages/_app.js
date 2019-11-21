@@ -8,7 +8,7 @@ import Layout from '../hoc/Layout';
 // https://github.com/zeit/next.js/issues/5291
 // https://github.com/zeit/next.js/issues/5598#issuecomment-443319470
 // https://github.com/zeit/next.js/issues/5264#issuecomment-424000127
-import '../public/styles/jank-empty.css';
+import '../public/static/styles/jank-empty.css';
 
 class MyApp extends App {
   render() {

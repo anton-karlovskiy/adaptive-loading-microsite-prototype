@@ -1,24 +1,24 @@
 
 const banners = {
   factorType: {
-    svg: '/images/factor-type.svg',
-    png: '/images/factor-type.png',
+    svg: '/static/images/factor-type.svg',
+    png: '/static/images/factor-type.png',
     alt: 'memory cpu network'
   },
   lowData: {
-    webp: '/images/low-data.webp',
-    jpg: '/images/low-data.jpg',
+    webp: '/static/images/low-data.webp',
+    jpg: '/static/images/low-data.jpg',
     alt: 'phone with low data'
   }
 };
 
 const head = {
-  favicon16: '/head/favicon-16x16.png',
-  favicon32: '/head/favicon-32x32.png',
-  appleTouchIcon: '/head/apple-touch-icon.png'
+  favicon16: '/static/head/favicon-16x16.png',
+  favicon32: '/static/head/favicon-32x32.png',
+  appleTouchIcon: '/static/head/apple-touch-icon.png'
 };
 
-const imagePlaceHolder = '/images/placeholder.gif';
+const imagePlaceHolder = '/static/images/placeholder.gif';
 
 export {
   banners,

@@ -174,7 +174,7 @@ const demosMeta = [
 ];
 
 const getDemosPath = fileExtension => {
-  const demosPath = `/images/demos/${fileExtension}/`;
+  const demosPath = `/static/images/demos/${fileExtension}/`;
   return demosPath;
 };
 
