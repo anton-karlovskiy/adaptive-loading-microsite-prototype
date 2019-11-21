@@ -4,6 +4,62 @@ const REPO_URL = 'https://github.com/GoogleChromeLabs/adaptive-loading/';
 
 const demosMeta = [
   {
+    id: 17,
+    title: 'React Twitter - save-data loading based on Client Hint',
+    posterName: `react-twitter-save-data-loading-client-hint`,
+    sourceCode: `${REPO_URL}tree/master/react-twitter-save-data-loading-client-hint`,
+    liveDemo: `${HOST_URL}react-twitter-save-data-loading(client-hint)/`
+  },
+  {
+    id: 18,
+    title: 'React Twitter - save-data loading based on Hook',
+    posterName: `react-twitter-save-data-loading-hook`,
+    sourceCode: `${REPO_URL}tree/master/react-twitter-save-data-loading-hook`,
+    liveDemo: `${HOST_URL}react-twitter-save-data-loading(hook)/`
+  },
+  {
+    id: 19,
+    title: 'React Movie - network-aware loading',
+    posterName: `react-movie-network-aware-loading`,
+    sourceCode: `${REPO_URL}tree/master/react-movie-network-aware-loading`,
+    liveDemo: `${HOST_URL}react-movie-network-aware-loading/`
+  },
+  {
+    id: 20,
+    title: 'React Shrine - network-aware code-splitting',
+    posterName: `react-shrine-network-aware-code-splitting`,
+    sourceCode: `${REPO_URL}tree/master/react-shrine-network-aware-code-splitting`,
+    liveDemo: `${HOST_URL}react-shrine-network-aware-code-splitting/`
+  },
+  {
+    id: 21,
+    title: 'React eBay - network-aware code-splitting',
+    posterName: `react-ebay-network-aware-code-splitting`,
+    sourceCode: `${REPO_URL}tree/master/react-ebay-network-aware-code-splitting`,
+    liveDemo: `${HOST_URL}react-ebay-network-aware-code-splitting/`
+  },
+  {
+    id: 22,
+    title: 'React Dixie Mesh - memory considerate loading',
+    posterName: `react-dixie-memory-considerate-loading`,
+    sourceCode: `${REPO_URL}tree/master/react-dixie-memory-considerate-loading`,
+    liveDemo: `${HOST_URL}react-dixie-memory-considerate-loading/`
+  },
+  {
+    id: 23,
+    title: 'React Lottie - network-aware loading',
+    posterName: `react-lottie-network-aware-loading`,
+    sourceCode: `${REPO_URL}tree/master/react-lottie-network-aware-loading`,
+    liveDemo: `${HOST_URL}react-lottie-network-aware-loading/`
+  },
+  {
+    id: 24,
+    title: 'React Youtube - adaptive loading with mix of network, memory and CPU',
+    posterName: `react-youtube-adaptive-loading`,
+    sourceCode: `${REPO_URL}tree/master/react-youtube-adaptive-loading`,
+    liveDemo: `${HOST_URL}react-youtube-adaptive-loading/`
+  },
+  {
     id: 1,
     title: 'Network-aware loading',
     posterName: `cra-network-aware-loading`,
@@ -114,62 +170,6 @@ const demosMeta = [
     posterName: `node-network-memory-considerate-loading`,
     sourceCode: `${REPO_URL}tree/master/node-network-memory-considerate-loading`,
     liveDemo: `${HOST_URL}node-network-memory-considerate-loading/`
-  },
-  {
-    id: 17,
-    title: 'React Twitter - save-data loading based on Client Hint',
-    posterName: `react-twitter-save-data-loading-client-hint`,
-    sourceCode: `${REPO_URL}tree/master/react-twitter-save-data-loading-client-hint`,
-    liveDemo: `${HOST_URL}react-twitter-save-data-loading(client-hint)/`
-  },
-  {
-    id: 18,
-    title: 'React Twitter - save-data loading based on Hook',
-    posterName: `react-twitter-save-data-loading-hook`,
-    sourceCode: `${REPO_URL}tree/master/react-twitter-save-data-loading-hook`,
-    liveDemo: `${HOST_URL}react-twitter-save-data-loading(hook)/`
-  },
-  {
-    id: 19,
-    title: 'React Movie - network-aware loading',
-    posterName: `react-movie-network-aware-loading`,
-    sourceCode: `${REPO_URL}tree/master/react-movie-network-aware-loading`,
-    liveDemo: `${HOST_URL}react-movie-network-aware-loading/`
-  },
-  {
-    id: 20,
-    title: 'React Shrine - network-aware code-splitting',
-    posterName: `react-shrine-network-aware-code-splitting`,
-    sourceCode: `${REPO_URL}tree/master/react-shrine-network-aware-code-splitting`,
-    liveDemo: `${HOST_URL}react-shrine-network-aware-code-splitting/`
-  },
-  {
-    id: 21,
-    title: 'React eBay - network-aware code-splitting',
-    posterName: `react-ebay-network-aware-code-splitting`,
-    sourceCode: `${REPO_URL}tree/master/react-ebay-network-aware-code-splitting`,
-    liveDemo: `${HOST_URL}react-ebay-network-aware-code-splitting/`
-  },
-  {
-    id: 22,
-    title: 'React Dixie Mesh - memory considerate loading',
-    posterName: `react-dixie-memory-considerate-loading`,
-    sourceCode: `${REPO_URL}tree/master/react-dixie-memory-considerate-loading`,
-    liveDemo: `${HOST_URL}react-dixie-memory-considerate-loading/`
-  },
-  {
-    id: 23,
-    title: 'React Lottie - network-aware loading',
-    posterName: `react-lottie-network-aware-loading`,
-    sourceCode: `${REPO_URL}tree/master/react-lottie-network-aware-loading`,
-    liveDemo: `${HOST_URL}react-lottie-network-aware-loading/`
-  },
-  {
-    id: 24,
-    title: 'React Youtube - adaptive loading with mix of network, memory and CPU',
-    posterName: `react-youtube-adaptive-loading`,
-    sourceCode: `${REPO_URL}tree/master/react-youtube-adaptive-loading`,
-    liveDemo: `${HOST_URL}react-youtube-adaptive-loading/`
   }
 ];
 
