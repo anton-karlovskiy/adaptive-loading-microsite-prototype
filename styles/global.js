@@ -17,7 +17,10 @@ export default css.global`
     font-weight: 400;
   }
   p {
-    font-size: 14px;
+    // ray test touch <
+    // font-size: 16px;
+    font-size: 1em;
+    // ray test touch >
     color: ${theme.colors.subText};
     margin: 0;
     margin-bottom: 16px;
@@ -51,16 +54,20 @@ export default css.global`
     h1 {
       font-size: 50px;
     }
-    p {
-      font-size: 15px;
-    }
+    // ray test touch <
+    // p {
+    //   font-size: 15px;
+    // }
+    // ray test touch >
   }
   @media screen and (min-width: ${theme.breakpoint.tablet}px) {
     h1 {
       font-size: 60px;
     }
-    p {
-      font-size: 16px;
-    }
+    // ray test touch <
+    // p {
+    //   font-size: 16px;
+    // }
+    // ray test touch >
   }
 `;
